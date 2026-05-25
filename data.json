@@ -1,0 +1,3439 @@
+{
+  "generatedAt": "2026-05-25T12:34:20.262Z",
+  "globalStats": {
+    "totalRepos": 25,
+    "totalAlerts": 69,
+    "totalDependabotPRs": 49,
+    "totalCoverageGap": 35,
+    "totalFailingPRs": 29,
+    "sharedDependencies": 63
+  },
+  "repositories": [
+    {
+      "owner": "podman-desktop",
+      "repo": "podman-desktop",
+      "fullName": "podman-desktop/podman-desktop",
+      "alerts": [
+        {
+          "number": 246,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": "<= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-15T00:45:33Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/246"
+        },
+        {
+          "number": 245,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": "<= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-15T00:45:33Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/245"
+        },
+        {
+          "number": 244,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": "<= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-15T00:45:32Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/244"
+        },
+        {
+          "number": 242,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": "<= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-15T00:40:57Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/242"
+        },
+        {
+          "number": 241,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": "<= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-15T00:40:56Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/241"
+        },
+        {
+          "number": 240,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": "<= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-15T00:40:56Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/240"
+        },
+        {
+          "number": 238,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": ">= 5.46.0, <= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-14T21:47:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/238"
+        },
+        {
+          "number": 237,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": ">= 5.46.0, <= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-14T21:47:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/237"
+        },
+        {
+          "number": 236,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": ">= 5.46.0, <= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-14T21:47:22Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/security/dependabot/236"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 17607,
+          "title": "chore(deps): bump github/codeql-action from 4.35.5 to 4.36.0",
+          "state": "open",
+          "createdAt": "2026-05-25T03:25:16Z",
+          "updatedAt": "2026-05-25T03:25:21Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17607",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17603,
+          "title": "chore(deps): bump stream-json from 2.1.0 to 3.0.0",
+          "state": "open",
+          "createdAt": "2026-05-22T03:09:33Z",
+          "updatedAt": "2026-05-22T05:13:41Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17603",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17601,
+          "title": "chore(deps-dev): bump vite from 7.3.2 to 8.0.14",
+          "state": "open",
+          "createdAt": "2026-05-22T03:08:14Z",
+          "updatedAt": "2026-05-22T05:13:50Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17601",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17584,
+          "title": "chore(deps-dev): bump svelte from 5.53.7 to 5.55.9",
+          "state": "open",
+          "createdAt": "2026-05-21T03:08:51Z",
+          "updatedAt": "2026-05-22T05:13:51Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17584",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17557,
+          "title": "chore(deps-dev): bump postcss from 8.5.12 to 8.5.15",
+          "state": "open",
+          "createdAt": "2026-05-19T14:03:29Z",
+          "updatedAt": "2026-05-22T05:13:32Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17557",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17525,
+          "title": "chore(deps-dev): bump the storybook group across 1 directory with 5 updates",
+          "state": "open",
+          "createdAt": "2026-05-15T03:07:47Z",
+          "updatedAt": "2026-05-25T03:35:14Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17525",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17524,
+          "title": "chore(deps-dev): bump svelte from 5.53.7 to 5.55.7 in /packages/ui",
+          "state": "open",
+          "createdAt": "2026-05-15T00:47:46Z",
+          "updatedAt": "2026-05-20T20:19:20Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17524",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17523,
+          "title": "chore(deps-dev): bump svelte from 5.53.7 to 5.55.7 in /storybook",
+          "state": "open",
+          "createdAt": "2026-05-15T00:43:13Z",
+          "updatedAt": "2026-05-20T21:09:58Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17523",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17522,
+          "title": "chore(deps-dev): bump svelte from 5.53.7 to 5.55.7 in /packages/renderer",
+          "state": "open",
+          "createdAt": "2026-05-14T21:48:29Z",
+          "updatedAt": "2026-05-20T20:19:18Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17522",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17521,
+          "title": "chore(deps-dev): bump svelte from 5.53.7 to 5.55.7",
+          "state": "open",
+          "createdAt": "2026-05-14T21:38:15Z",
+          "updatedAt": "2026-05-22T05:13:17Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17521",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 17441,
+          "title": "chore(deps-dev): bump @sveltejs/vite-plugin-svelte from 6.2.4 to 7.1.2",
+          "state": "open",
+          "createdAt": "2026-05-08T03:08:23Z",
+          "updatedAt": "2026-05-20T14:16:53Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/17441",
+          "ciStatus": "pending",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@segment/analytics-node": "^3.1.0",
+        "chokidar": "^3.6.0",
+        "express": "^5.2.1",
+        "isomorphic-ws": "5.0.0",
+        "tar-fs": "^3.1.2",
+        "ssh2": "1.17.0",
+        "ws": "8.20.1",
+        "@biomejs/biome": "^2.4.15",
+        "@commitlint/cli": "^21.0.1",
+        "@commitlint/config-conventional": "^21.0.1",
+        "@electron/fuses": "^2.1.1",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^10.0.1",
+        "@playwright/test": "1.60.0",
+        "@podman-desktop/api": "workspace:",
+        "@rollup/plugin-commonjs": "^29.0.2",
+        "@rollup/plugin-json": "^6.1.0",
+        "@rollup/plugin-node-resolve": "^16.0.3",
+        "@tsconfig/strictest": "^2.0.8",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4.1.7",
+        "@vitest/eslint-plugin": "^1.6.17",
+        "cross-env": "10.1.0",
+        "dts-for-context-bridge": "0.7.1",
+        "electron": "42.2.0",
+        "electron-builder": "26.8.2",
+        "electron-builder-notarize": "^1.5.2",
+        "eslint": "^10.4.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-n": "^18.0.1",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "fzstd": "^0.1.1",
+        "get-tsconfig": "^4.14.0",
+        "globals": "^17.6.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.0.5",
+        "minimist": "^1.2.8",
+        "msw": "^2.14.6",
+        "prettier": "^3.8.3",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^7.3.2",
+        "mustache": "^4.2.0",
+        "vitest": "^4.1.7",
+        "xvfb-maybe": "^0.2.1"
+      },
+      "stats": {
+        "totalAlerts": 9,
+        "totalDependabotPRs": 11,
+        "coverageGap": 1,
+        "failingPRs": 10
+      },
+      "coverageGapPackages": [
+        "svelte"
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-bootc",
+      "fullName": "podman-desktop/extension-bootc",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 2541,
+          "title": "chore(deps): bump svelte-preprocess from 6.0.3 to 6.0.4",
+          "state": "open",
+          "createdAt": "2026-05-25T02:25:13Z",
+          "updatedAt": "2026-05-25T02:25:17Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2541",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 2538,
+          "title": "chore(deps-dev): bump prettier-plugin-svelte from 3.5.2 to 4.0.1",
+          "state": "open",
+          "createdAt": "2026-05-22T02:06:36Z",
+          "updatedAt": "2026-05-22T02:40:41Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2538",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 2459,
+          "title": "chore(deps-dev): bump the eslint group across 1 directory with 4 updates",
+          "state": "open",
+          "createdAt": "2026-04-10T02:06:22Z",
+          "updatedAt": "2026-05-25T02:25:56Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2459",
+          "ciStatus": "passing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@xterm/addon-attach": "^0.12.0",
+        "js-yaml": "^4.1.1",
+        "@biomejs/biome": "^2.4.15",
+        "@commitlint/cli": "^21.0.1",
+        "@commitlint/config-conventional": "^21.0.1",
+        "@eslint/compat": "^2.0.2",
+        "@eslint/eslintrc": "^3.3.3",
+        "@eslint/js": "^9.39.2",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4.0.10",
+        "autoprefixer": "^10.5.0",
+        "commitlint": "^21.0.1",
+        "concurrently": "^9.2.1",
+        "eslint": "^9.39.2",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.17.1",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.0.5",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^3.5.2",
+        "svelte-check": "^4.4.8",
+        "svelte-eslint-parser": "^1.6.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "8.0.14",
+        "vitest": "^4.0.10"
+      },
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 3,
+        "coverageGap": 0,
+        "failingPRs": 1
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-kreate",
+      "fullName": "podman-desktop/extension-kreate",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 788,
+          "title": "chore(deps-dev): bump svelte-preprocess from 6.0.3 to 6.0.4",
+          "state": "open",
+          "createdAt": "2026-05-25T02:28:19Z",
+          "updatedAt": "2026-05-25T02:28:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kreate/pull/788",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 787,
+          "title": "chore(deps): bump @scalar/openapi-parser from 0.26.1 to 0.28.5",
+          "state": "open",
+          "createdAt": "2026-05-22T02:09:53Z",
+          "updatedAt": "2026-05-22T02:17:54Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kreate/pull/787",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 786,
+          "title": "chore(deps-dev): bump prettier-plugin-svelte from 3.5.2 to 4.0.1",
+          "state": "open",
+          "createdAt": "2026-05-22T02:09:13Z",
+          "updatedAt": "2026-05-22T02:29:20Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kreate/pull/786",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 783,
+          "title": "chore(deps-dev): bump @podman-desktop/api from 1.26.2 to 1.27.1",
+          "state": "open",
+          "createdAt": "2026-05-21T02:31:17Z",
+          "updatedAt": "2026-05-21T02:53:47Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kreate/pull/783",
+          "ciStatus": "pending",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@kubernetes/client-node": "1.4.0",
+        "@scalar/openapi-parser": "^0.26.1",
+        "js-yaml": "^4.1.1",
+        "zod": "^4.4.3",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.0.1",
+        "@vitest/coverage-v8": "^4",
+        "concurrently": "^9.1.2",
+        "eslint": "^8.56.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "openapi-types": "^12.1.3",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^3.5.2",
+        "typescript": "5.9.3",
+        "vite": "^8.0.14",
+        "vitest": "^4"
+      },
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 4,
+        "coverageGap": 0,
+        "failingPRs": 2
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-compose",
+      "fullName": "podman-desktop/extension-compose",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-kind",
+      "fullName": "podman-desktop/extension-kind",
+      "alerts": [
+        {
+          "number": 29,
+          "state": "open",
+          "severity": "medium",
+          "package": "ws",
+          "vulnerableVersionRange": ">= 8.0.0, < 8.20.1",
+          "firstPatchedVersion": "8.20.1",
+          "createdAt": "2026-05-19T12:48:42Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/security/dependabot/29"
+        },
+        {
+          "number": 7,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-26T10:06:31Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/security/dependabot/7"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 123,
+          "title": "chore(deps-dev): bump eslint-plugin-file-progress from 3.0.2 to 4.0.0",
+          "state": "open",
+          "createdAt": "2026-05-19T12:44:14Z",
+          "updatedAt": "2026-05-19T12:44:21Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/pull/123",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 117,
+          "title": "chore(deps): bump pnpm/action-setup from 5.0.0 to 6.0.8",
+          "state": "open",
+          "createdAt": "2026-05-13T02:34:47Z",
+          "updatedAt": "2026-05-18T15:47:04Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/pull/117",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 77,
+          "title": "chore(deps-dev): bump eslint-plugin-simple-import-sort from 12.1.1 to 13.0.0",
+          "state": "open",
+          "createdAt": "2026-04-07T02:08:40Z",
+          "updatedAt": "2026-05-08T02:11:58Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/pull/77",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@kubernetes/client-node": "^1.4.0",
+        "@octokit/rest": "^22.0.1",
+        "@podman-desktop/api": "1.27.1",
+        "mustache": "^4.2.0",
+        "yaml": "^2.9.0",
+        "@biomejs/biome": "^2.4.15",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^10.0.1",
+        "@octokit/core": "^7.0.6",
+        "@octokit/types": "^16.0.0",
+        "@types/node": "^25.2.3",
+        "@vitest/coverage-v8": "^4.0.18",
+        "adm-zip": "^0.5.17",
+        "eslint": "^10.4.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^3.0.2",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "globals": "^17.6.0",
+        "mkdirp": "^3.0.1",
+        "tmp-promise": "^3.0.3",
+        "tsx": "^4.22.3",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^4.0.18"
+      },
+      "stats": {
+        "totalAlerts": 2,
+        "totalDependabotPRs": 3,
+        "coverageGap": 2,
+        "failingPRs": 1
+      },
+      "coverageGapPackages": [
+        "ws",
+        "rollup"
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-minikube",
+      "fullName": "podman-desktop/extension-minikube",
+      "alerts": [
+        {
+          "number": 16,
+          "state": "open",
+          "severity": "medium",
+          "package": "vite",
+          "vulnerableVersionRange": "<= 6.4.1",
+          "firstPatchedVersion": "6.4.2",
+          "createdAt": "2026-04-21T15:40:56Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/security/dependabot/16"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 980,
+          "title": "chore(deps-dev): bump @vitest/coverage-v8 from 2.1.4 to 4.1.7",
+          "state": "open",
+          "createdAt": "2026-05-21T02:29:05Z",
+          "updatedAt": "2026-05-21T02:45:17Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/pull/980",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 974,
+          "title": "chore(deps-dev): bump @typescript-eslint/parser from 8.59.2 to 8.59.4",
+          "state": "open",
+          "createdAt": "2026-05-19T12:37:38Z",
+          "updatedAt": "2026-05-21T02:57:17Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/pull/974",
+          "ciStatus": "passing",
+          "package": "unknown"
+        },
+        {
+          "number": 924,
+          "title": "chore(deps-dev): bump eslint-plugin-simple-import-sort from 12.1.1 to 13.0.0",
+          "state": "open",
+          "createdAt": "2026-04-07T02:05:52Z",
+          "updatedAt": "2026-05-20T07:10:17Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/pull/924",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@octokit/rest": "^22.0.1",
+        "@types/node": "^24",
+        "tmp-promise": "^3.0.3",
+        "7zip-min": "^3.0.1",
+        "@eslint/compat": "^2.1.0",
+        "@podman-desktop/api": "^1.27.1",
+        "@typescript-eslint/eslint-plugin": "^8.59.2",
+        "@typescript-eslint/parser": "^8.59.2",
+        "@vitest/coverage-v8": "^2.0.5",
+        "eslint": "^9.39.2",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^3.0.2",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "globals": "^17.6.0",
+        "mkdirp": "^3.0.1",
+        "prettier": "^3.8.3",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "validator": "^13.15.35",
+        "vite": "^8.0.14",
+        "vitest": "^2.1.9"
+      },
+      "stats": {
+        "totalAlerts": 1,
+        "totalDependabotPRs": 3,
+        "coverageGap": 1,
+        "failingPRs": 2
+      },
+      "coverageGapPackages": [
+        "vite"
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-apple-container",
+      "fullName": "podman-desktop/extension-apple-container",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 319,
+          "title": "chore(deps-dev): bump lint-staged from 16.4.0 to 17.0.5",
+          "state": "open",
+          "createdAt": "2026-05-18T03:37:21Z",
+          "updatedAt": "2026-05-22T03:13:57Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/319",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 315,
+          "title": "chore(deps-dev): bump commitlint from 20.5.3 to 21.0.1",
+          "state": "open",
+          "createdAt": "2026-05-13T03:08:53Z",
+          "updatedAt": "2026-05-25T03:45:34Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/315",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 306,
+          "title": "chore(deps-dev): bump the commitlint group across 1 directory with 2 updates",
+          "state": "open",
+          "createdAt": "2026-05-11T03:12:49Z",
+          "updatedAt": "2026-05-25T03:32:12Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/306",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 276,
+          "title": "chore(deps): bump pnpm/action-setup from 5 to 6",
+          "state": "open",
+          "createdAt": "2026-04-13T03:13:41Z",
+          "updatedAt": "2026-04-13T03:13:46Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/276",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 244,
+          "title": "chore(deps): bump inversify from 7.11.0 to 8.1.0",
+          "state": "open",
+          "createdAt": "2026-03-16T03:09:45Z",
+          "updatedAt": "2026-04-19T20:31:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/244",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "inversify": "^7.11.0",
+        "@biomejs/biome": "^2.4.15",
+        "@commitlint/cli": "^20.5.3",
+        "@commitlint/config-conventional": "^20.5.3",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^10.0.1",
+        "@podman-desktop/api": "^1.27.1",
+        "@types/node": "^24.10.4",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4.1.7",
+        "@vitest/eslint-plugin": "^1.6.18",
+        "adm-zip": "^0.5.17",
+        "autoprefixer": "^10.5.0",
+        "commitlint": "^20.5.3",
+        "concurrently": "^9.2.1",
+        "eslint": "^10.4.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "globals": "^17.6.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.4.0",
+        "tsx": "^4.22.3",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "8.0.14",
+        "vitest": "^4.1.7"
+      },
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 5,
+        "coverageGap": 0,
+        "failingPRs": 2
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-podman-quadlet",
+      "fullName": "podman-desktop/extension-podman-quadlet",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 1508,
+          "title": "chore(deps): bump svelte-preprocess from 6.0.3 to 6.0.4",
+          "state": "open",
+          "createdAt": "2026-05-25T02:28:04Z",
+          "updatedAt": "2026-05-25T02:38:05Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-podman-quadlet/pull/1508",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 1503,
+          "title": "chore(deps-dev): bump prettier-plugin-svelte from 3.5.2 to 4.0.1",
+          "state": "open",
+          "createdAt": "2026-05-22T02:08:00Z",
+          "updatedAt": "2026-05-25T02:38:08Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-podman-quadlet/pull/1503",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 1500,
+          "title": "chore(deps-dev): bump @podman-desktop/api from 1.26.2 to 1.27.1",
+          "state": "open",
+          "createdAt": "2026-05-21T02:30:03Z",
+          "updatedAt": "2026-05-25T02:38:18Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-podman-quadlet/pull/1500",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4.1.7",
+        "@vitest/eslint-plugin": "^1.6.18",
+        "autoprefixer": "^10.5.0",
+        "concurrently": "^9.2.1",
+        "eslint": "^10.4.0",
+        "@eslint/js": "^10.0.1",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.17.1",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^3.5.2",
+        "svelte": "5.55.9",
+        "svelte-check": "^4.4.8",
+        "svelte-eslint-parser": "^1.6.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^4.1.7",
+        "globals": "^17.6.0"
+      },
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 3,
+        "coverageGap": 0,
+        "failingPRs": 2
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-grype",
+      "fullName": "podman-desktop/extension-grype",
+      "alerts": [
+        {
+          "number": 30,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": "<= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-15T01:05:49Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-grype/security/dependabot/30"
+        },
+        {
+          "number": 29,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": "<= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-15T01:01:56Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-grype/security/dependabot/29"
+        },
+        {
+          "number": 28,
+          "state": "open",
+          "severity": "medium",
+          "package": "svelte",
+          "vulnerableVersionRange": ">= 5.46.0, <= 5.55.6",
+          "firstPatchedVersion": "5.55.7",
+          "createdAt": "2026-05-14T22:02:27Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-grype/security/dependabot/28"
+        }
+      ],
+      "dependabotPRs": [],
+      "dependencies": {
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^10.0.1",
+        "@podman-desktop/api": "^1.27.1",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4.1.7",
+        "@vitest/eslint-plugin": "^1.6.18",
+        "autoprefixer": "^10.5.0",
+        "eslint": "^10.4.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.17.1",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "globals": "^17.6.0",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^4.0.1",
+        "svelte-eslint-parser": "^1.6.1",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^4.1.7"
+      },
+      "stats": {
+        "totalAlerts": 3,
+        "totalDependabotPRs": 0,
+        "coverageGap": 1,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": [
+        "svelte"
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-github",
+      "fullName": "podman-desktop/extension-github",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {
+        "@biomejs/biome": "^2.4.15",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^10.0.1",
+        "@octokit/rest": "^22.0.1",
+        "@podman-desktop/api": "1.27.1",
+        "@types/node": "^24",
+        "@vitest/coverage-v8": "^3.2.4",
+        "eslint": "^10.4.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "globals": "^17.6.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^3.2.4"
+      },
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-kubernetes-contexts",
+      "fullName": "podman-desktop/extension-kubernetes-contexts",
+      "alerts": [
+        {
+          "number": 34,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-26T10:52:17Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-contexts/security/dependabot/34"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 468,
+          "title": "build(deps): bump svelte-preprocess from 6.0.3 to 6.0.4",
+          "state": "open",
+          "createdAt": "2026-05-25T02:30:39Z",
+          "updatedAt": "2026-05-25T02:30:44Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-contexts/pull/468",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 466,
+          "title": "build(deps-dev): bump prettier-plugin-svelte from 3.5.2 to 4.0.1",
+          "state": "open",
+          "createdAt": "2026-05-22T02:11:00Z",
+          "updatedAt": "2026-05-22T05:39:56Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-contexts/pull/466",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 462,
+          "title": "build(deps-dev): bump @podman-desktop/ui-svelte from 1.26.2 to 1.27.1",
+          "state": "open",
+          "createdAt": "2026-05-21T02:31:58Z",
+          "updatedAt": "2026-05-21T03:22:45Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-contexts/pull/462",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "isomorphic-ws": "^5.0.0",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/js": "^10.0.1",
+        "@eslint/eslintrc": "^3.3.5",
+        "@tsconfig/strictest": "^2.0.6",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4.1.7",
+        "@vitest/eslint-plugin": "^1.6.18",
+        "autoprefixer": "^10.5.0",
+        "concurrently": "^9.1.2",
+        "eslint": "^10.4.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.3.4",
+        "eslint-plugin-better-tailwindcss": "^4.5.0",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.17.1",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "node-gyp": "^12.3.0",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^3.5.2",
+        "svelte": "5.55.9",
+        "svelte-check": "^4.4.8",
+        "svelte-eslint-parser": "^1.6.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^4"
+      },
+      "stats": {
+        "totalAlerts": 1,
+        "totalDependabotPRs": 3,
+        "coverageGap": 1,
+        "failingPRs": 2
+      },
+      "coverageGapPackages": [
+        "rollup"
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-kubernetes-dashboard",
+      "fullName": "podman-desktop/extension-kubernetes-dashboard",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 976,
+          "title": "build(deps): Bump svelte-preprocess from 6.0.3 to 6.0.4",
+          "state": "open",
+          "createdAt": "2026-05-25T02:29:21Z",
+          "updatedAt": "2026-05-25T02:29:25Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-dashboard/pull/976",
+          "ciStatus": "failing",
+          "package": "svelte-preprocess"
+        }
+      ],
+      "dependencies": {
+        "isomorphic-ws": "^5.0.0",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^10.0.1",
+        "@tsconfig/strictest": "^2.0.6",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4",
+        "@vitest/eslint-plugin": "^1.6.18",
+        "autoprefixer": "^10.5.0",
+        "concurrently": "^9.1.2",
+        "cronstrue": "^3.14.0",
+        "eslint": "^10.4.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.3.4",
+        "eslint-plugin-better-tailwindcss": "^4.5.0",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.17.1",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "node-gyp": "^12.3.0",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^4.0.1",
+        "svelte": "5.55.9",
+        "svelte-check": "^4.4.8",
+        "svelte-eslint-parser": "^1.6.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^4"
+      },
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 1,
+        "coverageGap": 0,
+        "failingPRs": 1
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-layers-explorer",
+      "fullName": "podman-desktop/extension-layers-explorer",
+      "alerts": [
+        {
+          "number": 56,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 9.0.0, < 9.0.7",
+          "firstPatchedVersion": "9.0.7",
+          "createdAt": "2026-05-20T11:56:44Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-layers-explorer/security/dependabot/56"
+        }
+      ],
+      "dependabotPRs": [],
+      "dependencies": {
+        "tar": "^7.5.15",
+        "@podman-desktop/api": "^1.27.1",
+        "@types/node": "^24",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^6.19.1",
+        "@vitest/coverage-v8": "^4",
+        "eslint": "^8.57.1",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "prettier": "^3.8.3",
+        "typescript": "5.9.3",
+        "validator": "^13.15.35",
+        "vite": "^8.0.14",
+        "vitest": "^4"
+      },
+      "stats": {
+        "totalAlerts": 1,
+        "totalDependabotPRs": 0,
+        "coverageGap": 1,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": [
+        "minimatch"
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-postgresql",
+      "fullName": "podman-desktop/extension-postgresql",
+      "alerts": [
+        {
+          "number": 47,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-26T13:29:09Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-postgresql/security/dependabot/47"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 600,
+          "title": "chore(deps): bump svelte-preprocess from 6.0.3 to 6.0.4",
+          "state": "open",
+          "createdAt": "2026-05-25T02:28:09Z",
+          "updatedAt": "2026-05-25T02:28:13Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-postgresql/pull/600",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "js-yaml": "^4.1.1",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.0.1",
+        "@vitest/coverage-v8": "^3.2.4",
+        "concurrently": "^9.2.1",
+        "eslint": "^8.56.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^4.0.1",
+        "svelte": "5.55.9",
+        "svelte-check": "^4.4.8",
+        "typescript": "5.9.3",
+        "vite": "^8.0.14",
+        "vitest": "^3.2.4"
+      },
+      "stats": {
+        "totalAlerts": 1,
+        "totalDependabotPRs": 1,
+        "coverageGap": 1,
+        "failingPRs": 1
+      },
+      "coverageGapPackages": [
+        "rollup"
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-pack-kubernetes",
+      "fullName": "podman-desktop/extension-pack-kubernetes",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "eslint-plugin",
+      "fullName": "podman-desktop/eslint-plugin",
+      "alerts": [
+        {
+          "number": 20,
+          "state": "open",
+          "severity": "high",
+          "package": "lodash",
+          "vulnerableVersionRange": ">= 4.0.0, <= 4.17.23",
+          "firstPatchedVersion": "4.18.0",
+          "createdAt": "2026-04-06T03:16:37Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/20"
+        },
+        {
+          "number": 19,
+          "state": "open",
+          "severity": "medium",
+          "package": "lodash",
+          "vulnerableVersionRange": "<= 4.17.23",
+          "firstPatchedVersion": "4.18.0",
+          "createdAt": "2026-04-06T03:16:37Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/19"
+        },
+        {
+          "number": 15,
+          "state": "open",
+          "severity": "medium",
+          "package": "picomatch",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.0.4",
+          "firstPatchedVersion": "4.0.4",
+          "createdAt": "2026-03-26T03:20:24Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/15"
+        },
+        {
+          "number": 9,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 10.0.0, < 10.2.3",
+          "firstPatchedVersion": "10.2.3",
+          "createdAt": "2026-02-28T12:04:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/9"
+        },
+        {
+          "number": 7,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-26T14:00:51Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/7"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 85,
+          "title": "chore(deps-dev): bump vite-plugin-dts from 4.5.4 to 5.0.1",
+          "state": "open",
+          "createdAt": "2026-05-19T14:34:48Z",
+          "updatedAt": "2026-05-22T03:24:47Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/pull/85",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 83,
+          "title": "chore(deps-dev): bump lint-staged from 16.4.0 to 17.0.5",
+          "state": "open",
+          "createdAt": "2026-05-18T03:42:46Z",
+          "updatedAt": "2026-05-22T03:24:51Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/pull/83",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 80,
+          "title": "chore(deps): bump pnpm/action-setup from 6.0.7 to 6.0.8",
+          "state": "open",
+          "createdAt": "2026-05-13T03:10:52Z",
+          "updatedAt": "2026-05-13T03:21:34Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/pull/80",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 51,
+          "title": "chore(deps-dev): bump typescript from 5.9.3 to 6.0.3",
+          "state": "open",
+          "createdAt": "2026-04-17T03:09:20Z",
+          "updatedAt": "2026-05-18T03:53:26Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/pull/51",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@biomejs/biome": "^2.3.15",
+        "@types/eslint": "^9.6.0",
+        "@types/node": "^24",
+        "eslint": "^10.0.0",
+        "eslint-plugin-yml": "^3.1.2",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.2.7",
+        "typescript": "^5.4.0",
+        "typescript-eslint": "^8.55.0",
+        "vite": "^8.0.0",
+        "vite-plugin-dts": "^4.5.4",
+        "vitest": "^4.0.18"
+      },
+      "stats": {
+        "totalAlerts": 5,
+        "totalDependabotPRs": 4,
+        "coverageGap": 4,
+        "failingPRs": 2
+      },
+      "coverageGapPackages": [
+        "lodash",
+        "picomatch",
+        "minimatch",
+        "rollup"
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "e2e",
+      "fullName": "podman-desktop/e2e",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "containers",
+      "repo": "podman-desktop-extension-ai-lab",
+      "fullName": "containers/podman-desktop-extension-ai-lab",
+      "alerts": [
+        {
+          "number": 138,
+          "state": "open",
+          "severity": "medium",
+          "package": "qs",
+          "vulnerableVersionRange": ">= 6.11.1, <= 6.15.1",
+          "firstPatchedVersion": "6.15.2",
+          "createdAt": "2026-05-23T07:33:31Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/138"
+        },
+        {
+          "number": 137,
+          "state": "open",
+          "severity": "medium",
+          "package": "uuid",
+          "vulnerableVersionRange": "< 11.1.1",
+          "firstPatchedVersion": "11.1.1",
+          "createdAt": "2026-05-21T19:34:38Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/137"
+        },
+        {
+          "number": 136,
+          "state": "open",
+          "severity": "medium",
+          "package": "ws",
+          "vulnerableVersionRange": ">= 8.0.0, < 8.20.1",
+          "firstPatchedVersion": "8.20.1",
+          "createdAt": "2026-05-19T04:04:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/136"
+        },
+        {
+          "number": 124,
+          "state": "open",
+          "severity": "high",
+          "package": "fast-uri",
+          "vulnerableVersionRange": "<= 3.1.1",
+          "firstPatchedVersion": "3.1.2",
+          "createdAt": "2026-05-09T02:22:36Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/124"
+        },
+        {
+          "number": 123,
+          "state": "open",
+          "severity": "high",
+          "package": "fast-uri",
+          "vulnerableVersionRange": "<= 3.1.0",
+          "firstPatchedVersion": "3.1.1",
+          "createdAt": "2026-05-08T23:56:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/123"
+        },
+        {
+          "number": 121,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "< 3.4.0",
+          "firstPatchedVersion": "3.4.0",
+          "createdAt": "2026-04-22T18:27:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/121"
+        },
+        {
+          "number": 120,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": ">= 1.0.10, < 3.4.0",
+          "firstPatchedVersion": "3.4.0",
+          "createdAt": "2026-04-22T18:27:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/120"
+        },
+        {
+          "number": 119,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": ">= 3.0.1, < 3.4.0",
+          "firstPatchedVersion": "3.4.0",
+          "createdAt": "2026-04-22T18:27:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/119"
+        },
+        {
+          "number": 118,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.3.3",
+          "firstPatchedVersion": "3.4.0",
+          "createdAt": "2026-04-16T03:01:02Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/118"
+        },
+        {
+          "number": 117,
+          "state": "open",
+          "severity": "medium",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.0.0, <= 7.3.1",
+          "firstPatchedVersion": "7.3.2",
+          "createdAt": "2026-04-06T18:39:12Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/117"
+        },
+        {
+          "number": 116,
+          "state": "open",
+          "severity": "high",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.1.0, <= 7.3.1",
+          "firstPatchedVersion": "7.3.2",
+          "createdAt": "2026-04-06T18:39:12Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/116"
+        },
+        {
+          "number": 115,
+          "state": "open",
+          "severity": "high",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.0.0, <= 7.3.1",
+          "firstPatchedVersion": "7.3.2",
+          "createdAt": "2026-04-06T18:39:12Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/115"
+        },
+        {
+          "number": 114,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.3.1",
+          "firstPatchedVersion": "3.3.2",
+          "createdAt": "2026-04-03T06:59:33Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/114"
+        },
+        {
+          "number": 113,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.3.1",
+          "firstPatchedVersion": "3.3.2",
+          "createdAt": "2026-04-03T06:59:33Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/113"
+        },
+        {
+          "number": 112,
+          "state": "open",
+          "severity": "high",
+          "package": "lodash",
+          "vulnerableVersionRange": ">= 4.0.0, <= 4.17.23",
+          "firstPatchedVersion": "4.18.0",
+          "createdAt": "2026-04-02T18:42:21Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/112"
+        },
+        {
+          "number": 111,
+          "state": "open",
+          "severity": "medium",
+          "package": "lodash",
+          "vulnerableVersionRange": "<= 4.17.23",
+          "firstPatchedVersion": "4.18.0",
+          "createdAt": "2026-04-02T18:42:21Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/111"
+        },
+        {
+          "number": 110,
+          "state": "open",
+          "severity": "medium",
+          "package": "path-to-regexp",
+          "vulnerableVersionRange": ">= 8.0.0, < 8.4.0",
+          "firstPatchedVersion": "8.4.0",
+          "createdAt": "2026-03-28T18:27:38Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/110"
+        },
+        {
+          "number": 109,
+          "state": "open",
+          "severity": "high",
+          "package": "path-to-regexp",
+          "vulnerableVersionRange": ">= 8.0.0, < 8.4.0",
+          "firstPatchedVersion": "8.4.0",
+          "createdAt": "2026-03-28T18:27:32Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/109"
+        },
+        {
+          "number": 108,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "< 3.3.2",
+          "firstPatchedVersion": "3.3.2",
+          "createdAt": "2026-03-28T10:18:46Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/108"
+        },
+        {
+          "number": 106,
+          "state": "open",
+          "severity": "medium",
+          "package": "brace-expansion",
+          "vulnerableVersionRange": ">= 2.0.0, < 2.0.3",
+          "firstPatchedVersion": "2.0.3",
+          "createdAt": "2026-03-27T18:32:19Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/106"
+        },
+        {
+          "number": 100,
+          "state": "open",
+          "severity": "medium",
+          "package": "picomatch",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.0.4",
+          "firstPatchedVersion": "4.0.4",
+          "createdAt": "2026-03-26T07:16:06Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/100"
+        },
+        {
+          "number": 99,
+          "state": "open",
+          "severity": "high",
+          "package": "flatted",
+          "vulnerableVersionRange": "<= 3.4.1",
+          "firstPatchedVersion": "3.4.2",
+          "createdAt": "2026-03-20T11:55:36Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/99"
+        },
+        {
+          "number": 89,
+          "state": "open",
+          "severity": "high",
+          "package": "multer",
+          "vulnerableVersionRange": "< 2.1.1",
+          "firstPatchedVersion": "2.1.1",
+          "createdAt": "2026-03-05T08:22:04Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/89"
+        },
+        {
+          "number": 88,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": ">= 3.1.3, <= 3.3.1",
+          "firstPatchedVersion": "3.3.2",
+          "createdAt": "2026-03-04T22:00:57Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/88"
+        },
+        {
+          "number": 87,
+          "state": "open",
+          "severity": "high",
+          "package": "multer",
+          "vulnerableVersionRange": "< 2.1.0",
+          "firstPatchedVersion": "2.1.0",
+          "createdAt": "2026-03-02T06:16:44Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/87"
+        },
+        {
+          "number": 86,
+          "state": "open",
+          "severity": "high",
+          "package": "multer",
+          "vulnerableVersionRange": "< 2.1.0",
+          "firstPatchedVersion": "2.1.0",
+          "createdAt": "2026-03-02T06:16:43Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/86"
+        },
+        {
+          "number": 85,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": "< 3.1.3",
+          "firstPatchedVersion": "3.1.3",
+          "createdAt": "2026-03-01T13:42:25Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/85"
+        },
+        {
+          "number": 83,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 5.0.0, < 5.1.8",
+          "firstPatchedVersion": "5.1.8",
+          "createdAt": "2026-02-28T23:19:31Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/83"
+        },
+        {
+          "number": 82,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 5.0.0, < 5.1.8",
+          "firstPatchedVersion": "5.1.8",
+          "createdAt": "2026-02-28T23:19:29Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/82"
+        },
+        {
+          "number": 81,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 9.0.0, < 9.0.7",
+          "firstPatchedVersion": "9.0.7",
+          "createdAt": "2026-02-28T21:00:35Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/81"
+        },
+        {
+          "number": 77,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-28T17:43:35Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/77"
+        },
+        {
+          "number": 71,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 5.0.0, < 5.1.7",
+          "firstPatchedVersion": "5.1.7",
+          "createdAt": "2026-02-25T05:59:22Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/71"
+        },
+        {
+          "number": 68,
+          "state": "open",
+          "severity": "medium",
+          "package": "ajv",
+          "vulnerableVersionRange": ">= 7.0.0-alpha.0, < 8.18.0",
+          "firstPatchedVersion": "8.18.0",
+          "createdAt": "2026-02-20T22:02:44Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/68"
+        },
+        {
+          "number": 59,
+          "state": "open",
+          "severity": "low",
+          "package": "qs",
+          "vulnerableVersionRange": ">= 6.7.0, <= 6.14.1",
+          "firstPatchedVersion": "6.14.2",
+          "createdAt": "2026-02-12T23:01:07Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/59"
+        },
+        {
+          "number": 56,
+          "state": "open",
+          "severity": "medium",
+          "package": "lodash",
+          "vulnerableVersionRange": ">= 4.0.0, <= 4.17.22",
+          "firstPatchedVersion": "4.17.23",
+          "createdAt": "2026-01-22T08:51:28Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/56"
+        },
+        {
+          "number": 51,
+          "state": "open",
+          "severity": "medium",
+          "package": "qs",
+          "vulnerableVersionRange": "< 6.14.1",
+          "firstPatchedVersion": "6.14.1",
+          "createdAt": "2025-12-31T08:51:13Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/51"
+        },
+        {
+          "number": 48,
+          "state": "open",
+          "severity": "high",
+          "package": "glob",
+          "vulnerableVersionRange": ">= 10.2.0, < 10.5.0",
+          "firstPatchedVersion": "10.5.0",
+          "createdAt": "2025-11-19T07:06:25Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/48"
+        },
+        {
+          "number": 46,
+          "state": "open",
+          "severity": "medium",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.1.0, <= 7.1.10",
+          "firstPatchedVersion": "7.1.11",
+          "createdAt": "2025-10-20T20:36:36Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/46"
+        }
+      ],
+      "dependabotPRs": [],
+      "dependencies": {
+        "js-yaml": "^4.1.1",
+        "zod": "^4.4.3",
+        "@commitlint/cli": "^21.0.1",
+        "@commitlint/config-conventional": "^21.0.1",
+        "@eslint/compat": "^2.1.0",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^3.2.3",
+        "autoprefixer": "^10.5.0",
+        "commitlint": "^21.0.1",
+        "concurrently": "^9.2.1",
+        "eslint": "^9.39.2",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.3.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.17.1",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "globals": "^17.6.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.0.5",
+        "msw": "^2.14.6",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^4.0.0",
+        "svelte-check": "^4.4.8",
+        "svelte-eslint-parser": "^1.6.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^3.0.5"
+      },
+      "stats": {
+        "totalAlerts": 38,
+        "totalDependabotPRs": 0,
+        "coverageGap": 16,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": [
+        "qs",
+        "uuid",
+        "ws",
+        "fast-uri",
+        "dompurify",
+        "vite",
+        "lodash",
+        "path-to-regexp",
+        "brace-expansion",
+        "picomatch",
+        "flatted",
+        "multer",
+        "minimatch",
+        "rollup",
+        "ajv",
+        "glob"
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-redhat-account-ext",
+      "fullName": "redhat-developer/podman-desktop-redhat-account-ext",
+      "alerts": [
+        {
+          "number": 24,
+          "state": "open",
+          "severity": "medium",
+          "package": "picomatch",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.0.4",
+          "firstPatchedVersion": "4.0.4",
+          "createdAt": "2026-03-26T07:17:18Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-account-ext/security/dependabot/24"
+        },
+        {
+          "number": 22,
+          "state": "open",
+          "severity": "high",
+          "package": "flatted",
+          "vulnerableVersionRange": "<= 3.4.1",
+          "firstPatchedVersion": "3.4.2",
+          "createdAt": "2026-03-19T23:43:27Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-account-ext/security/dependabot/22"
+        },
+        {
+          "number": 20,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": "< 3.1.3",
+          "firstPatchedVersion": "3.1.3",
+          "createdAt": "2026-02-27T12:57:17Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-account-ext/security/dependabot/20"
+        },
+        {
+          "number": 19,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 9.0.0, < 9.0.7",
+          "firstPatchedVersion": "9.0.7",
+          "createdAt": "2026-02-27T12:57:17Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-account-ext/security/dependabot/19"
+        }
+      ],
+      "dependabotPRs": [],
+      "dependencies": {
+        "@podman-desktop/api": "1.27.0-next.202604210820-677f704",
+        "@podman-desktop/podman-extension-api": "1.27.1",
+        "js-yaml": "^4.1.1",
+        "object-hash": "3.0.0",
+        "openapi-fetch": "^0.17.0",
+        "openid-client": "^6.8.4",
+        "7zip-min": "^3.0.1",
+        "@playwright/test": "^1.60.0",
+        "@podman-desktop/tests-playwright": "^1.27.1",
+        "@types/js-yaml": "^4.0.5",
+        "@types/node": "^24",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^6.21.0",
+        "@vitest/coverage-v8": "^3.2.4",
+        "byline": "^5.0.0",
+        "copyfiles": "^2.4.1",
+        "cross-env": "^10.1.0",
+        "eslint": "^8.57.1",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-header": "^3.1.1",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^56.0.1",
+        "mkdirp": "^3.0.1",
+        "prettier": "^3.8.3",
+        "tslib": "^2.8.1",
+        "typescript": "^5.9.3",
+        "vite": "^8.0.14",
+        "vitest": "^3.2.4",
+        "xvfb-maybe": "^0.2.1",
+        "adm-zip": "^0.5.17"
+      },
+      "stats": {
+        "totalAlerts": 4,
+        "totalDependabotPRs": 0,
+        "coverageGap": 3,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": [
+        "picomatch",
+        "flatted",
+        "minimatch"
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-sandbox-ext",
+      "fullName": "redhat-developer/podman-desktop-sandbox-ext",
+      "alerts": [
+        {
+          "number": 53,
+          "state": "open",
+          "severity": "medium",
+          "package": "ip-address",
+          "vulnerableVersionRange": "<= 10.1.0",
+          "firstPatchedVersion": "10.1.1",
+          "createdAt": "2026-05-06T21:13:20Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-sandbox-ext/security/dependabot/53"
+        },
+        {
+          "number": 47,
+          "state": "open",
+          "severity": "medium",
+          "package": "picomatch",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.0.4",
+          "firstPatchedVersion": "4.0.4",
+          "createdAt": "2026-03-26T06:40:32Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-sandbox-ext/security/dependabot/47"
+        },
+        {
+          "number": 38,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": "< 3.1.3",
+          "firstPatchedVersion": "3.1.3",
+          "createdAt": "2026-02-28T23:30:15Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-sandbox-ext/security/dependabot/38"
+        }
+      ],
+      "dependabotPRs": [],
+      "dependencies": {
+        "@kubernetes/client-node": "^1.4.0",
+        "@podman-desktop/api": "^1.27.1",
+        "fs-extra": "^11.3.5",
+        "got": "^15.0.5",
+        "@playwright/test": "1.60.0",
+        "@podman-desktop/tests-playwright": "^1.27.1",
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^24",
+        "@vitest/coverage-v8": "^4.0.15",
+        "byline": "^5.0.0",
+        "copyfiles": "^2.4.1",
+        "cross-env": "10.1.0",
+        "jsdom": "^29.1.1",
+        "mkdirp": "^3.0.1",
+        "prettier": "^3.8.3",
+        "typescript": "^6.0.3",
+        "vite": "^8.0.14",
+        "vitest": "^4.0.15",
+        "vscode-uri": "^3.1.0",
+        "xvfb-maybe": "^0.2.1",
+        "js-yaml": "^4.1.1",
+        "adm-zip": "^0.5.17"
+      },
+      "stats": {
+        "totalAlerts": 3,
+        "totalDependabotPRs": 0,
+        "coverageGap": 3,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": [
+        "ip-address",
+        "picomatch",
+        "minimatch"
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-redhat-lightspeed-ext",
+      "fullName": "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 538,
+          "title": "chore(deps-dev): bump prettier-plugin-svelte from 3.5.2 to 4.0.1",
+          "state": "open",
+          "createdAt": "2026-05-22T16:08:36Z",
+          "updatedAt": "2026-05-22T16:08:42Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-lightspeed-ext/pull/538",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 477,
+          "title": "chore(deps): bump pnpm/action-setup from 5 to 6",
+          "state": "open",
+          "createdAt": "2026-04-13T17:21:20Z",
+          "updatedAt": "2026-04-13T17:21:25Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-lightspeed-ext/pull/477",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 442,
+          "title": "chore(deps): bump inversify from 7.11.0 to 8.1.0",
+          "state": "open",
+          "createdAt": "2026-03-23T16:42:33Z",
+          "updatedAt": "2026-04-23T08:28:36Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-lightspeed-ext/pull/442",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@eslint/compat": "^2.0.4",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.30.1",
+        "@vitest/coverage-v8": "^4.1.5",
+        "@vitest/eslint-plugin": "^1.6.17",
+        "autoprefixer": "^10.5.0",
+        "concurrently": "^9.1.2",
+        "eslint": "^9.39.2",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.3.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^3.0.2",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.17.1",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "node-gyp": "^12.0.0",
+        "prettier": "^3.8.2",
+        "prettier-plugin-svelte": "^3.3.3",
+        "svelte": "5.55.9",
+        "svelte-check": "^4.4.7",
+        "svelte-eslint-parser": "^1.6.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.30.1",
+        "vite": "^8.0.14",
+        "vitest": "^3.1.2"
+      },
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 3,
+        "coverageGap": 0,
+        "failingPRs": 2
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-rhel-ext",
+      "fullName": "redhat-developer/podman-desktop-rhel-ext",
+      "alerts": [
+        {
+          "number": 26,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 9.0.0, < 9.0.7",
+          "firstPatchedVersion": "9.0.7",
+          "createdAt": "2026-03-01T08:31:58Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-rhel-ext/security/dependabot/26"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 552,
+          "title": "chore(deps): bump @podman-desktop/api from 1.26.2 to 1.27.1",
+          "state": "open",
+          "createdAt": "2026-05-20T20:52:39Z",
+          "updatedAt": "2026-05-22T16:39:57Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-rhel-ext/pull/552",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 551,
+          "title": "chore(deps-dev): bump @podman-desktop/tests-playwright from 1.26.2 to 1.27.1",
+          "state": "open",
+          "createdAt": "2026-05-20T20:51:59Z",
+          "updatedAt": "2026-05-21T08:00:32Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-rhel-ext/pull/551",
+          "ciStatus": "pending",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@crc-org/macadam.js": "0.7.0",
+        "@podman-desktop/api": "1.26.2",
+        "compare-versions": "^6.1.1",
+        "openapi-fetch": "^0.17.0",
+        "semver": "^7.8.1",
+        "ssh2": "^1.17.0",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^10.0.1",
+        "@types/node": "^24",
+        "@types/ssh2": "^1.15.5",
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4",
+        "eslint": "^10.4.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "globals": "^17.6.0",
+        "memfs": "^4.57.2",
+        "openapi-typescript": "^7.13.0",
+        "prettier": "^3.8.3",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^4"
+      },
+      "stats": {
+        "totalAlerts": 1,
+        "totalDependabotPRs": 2,
+        "coverageGap": 1,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": [
+        "minimatch"
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-hummingbird-ext",
+      "fullName": "redhat-developer/podman-desktop-hummingbird-ext",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 394,
+          "title": "build(deps-dev): bump prettier-plugin-svelte from 3.5.2 to 4.0.1",
+          "state": "open",
+          "createdAt": "2026-05-22T02:13:37Z",
+          "updatedAt": "2026-05-22T02:29:11Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-hummingbird-ext/pull/394",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 380,
+          "title": "build(deps-dev): bump unplugin-dts from 1.0.0-beta.6 to 1.0.1",
+          "state": "open",
+          "createdAt": "2026-05-19T12:45:38Z",
+          "updatedAt": "2026-05-22T02:29:14Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-hummingbird-ext/pull/380",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 210,
+          "title": "build(deps): bump inversify from 7.11.0 to 8.1.0",
+          "state": "open",
+          "createdAt": "2026-04-10T02:10:36Z",
+          "updatedAt": "2026-05-11T02:25:39Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-hummingbird-ext/pull/210",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^8.59.4",
+        "@typescript-eslint/parser": "^8.59.4",
+        "@vitest/coverage-v8": "^4.1.7",
+        "@vitest/eslint-plugin": "^1.6.18",
+        "autoprefixer": "^10.5.0",
+        "concurrently": "^9.2.1",
+        "eslint": "^9.39.2",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/js": "^9.39.4",
+        "@eslint/eslintrc": "^3.3.5",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.17.1",
+        "eslint-plugin-unicorn": "^64.0.0",
+        "prettier": "^3.8.3",
+        "prettier-plugin-svelte": "^3.5.2",
+        "svelte-eslint-parser": "^1.6.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.59.4",
+        "vite": "^8.0.14",
+        "vitest": "^4.1.7",
+        "globals": "^17.6.0",
+        "@podman-desktop/api": "^1.27.1"
+      },
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 3,
+        "coverageGap": 0,
+        "failingPRs": 1
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-redhat-pack-ext",
+      "fullName": "redhat-developer/podman-desktop-redhat-pack-ext",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": []
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-image-checker-openshift-ext",
+      "fullName": "redhat-developer/podman-desktop-image-checker-openshift-ext",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "failingPRs": 0
+      },
+      "coverageGapPackages": []
+    }
+  ],
+  "sharedDependencies": [
+    {
+      "package": "typescript",
+      "repoCount": 20,
+      "versions": [
+        "^5.9.3",
+        "5.9.3",
+        "^6.0.3",
+        "^5.4.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "podman-desktop/eslint-plugin",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "vite",
+      "repoCount": 20,
+      "versions": [
+        "^8.0.14",
+        "8.0.14",
+        "^7.3.2",
+        "^8.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "podman-desktop/eslint-plugin",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "vitest",
+      "repoCount": 20,
+      "versions": [
+        "^4.0.18",
+        "^4",
+        "^4.0.10",
+        "^4.1.7",
+        "^3.2.4",
+        "^2.1.9",
+        "^4.0.15",
+        "^3.0.5",
+        "^3.1.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "podman-desktop/eslint-plugin",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@vitest/coverage-v8",
+      "repoCount": 19,
+      "versions": [
+        "^4.0.18",
+        "^4",
+        "^4.0.10",
+        "^4.1.7",
+        "^3.2.4",
+        "^2.0.5",
+        "^4.0.15",
+        "^3.2.3",
+        "^4.1.5"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint",
+      "repoCount": 19,
+      "versions": [
+        "^10.4.0",
+        "^8.56.0",
+        "^9.39.2",
+        "^8.57.1",
+        "^10.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "podman-desktop/eslint-plugin",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-import-resolver-custom-alias",
+      "repoCount": 18,
+      "versions": [
+        "^1.3.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-import-resolver-typescript",
+      "repoCount": 18,
+      "versions": [
+        "^4.4.4",
+        "^4.3.4",
+        "^4.3.5"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-etc",
+      "repoCount": 18,
+      "versions": [
+        "^2.0.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-import",
+      "repoCount": 18,
+      "versions": [
+        "^2.32.0",
+        "^2.31.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-redundant-undefined",
+      "repoCount": 18,
+      "versions": [
+        "^1.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-sonarjs",
+      "repoCount": 18,
+      "versions": [
+        "^4.0.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-no-null",
+      "repoCount": 17,
+      "versions": [
+        "^1.0.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@typescript-eslint/eslint-plugin",
+      "repoCount": 16,
+      "versions": [
+        "^8.59.4",
+        "^8.59.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@typescript-eslint/parser",
+      "repoCount": 16,
+      "versions": [
+        "^8.0.1",
+        "^8.59.4",
+        "^8.59.2",
+        "^6.19.1",
+        "^6.21.0",
+        "^8.30.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "prettier",
+      "repoCount": 16,
+      "versions": [
+        "^3.8.3",
+        "^3.8.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-simple-import-sort",
+      "repoCount": 15,
+      "versions": [
+        "^12.1.1",
+        "^13.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-unicorn",
+      "repoCount": 15,
+      "versions": [
+        "^64.0.0",
+        "^56.0.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "typescript-eslint",
+      "repoCount": 15,
+      "versions": [
+        "^8.59.4",
+        "^8.55.0",
+        "^8.30.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "podman-desktop/eslint-plugin",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@eslint/compat",
+      "repoCount": 14,
+      "versions": [
+        "^2.1.0",
+        "^2.0.2",
+        "^2.0.4"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@podman-desktop/api",
+      "repoCount": 11,
+      "versions": [
+        "1.27.1",
+        "workspace:",
+        "^1.27.1",
+        "1.27.0-next.202604210820-677f704",
+        "1.26.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-layers-explorer",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@eslint/eslintrc",
+      "repoCount": 11,
+      "versions": [
+        "^3.3.5",
+        "^3.3.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@eslint/js",
+      "repoCount": 11,
+      "versions": [
+        "^10.0.1",
+        "^9.39.2",
+        "^9.39.4"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "globals",
+      "repoCount": 10,
+      "versions": [
+        "^17.6.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "concurrently",
+      "repoCount": 10,
+      "versions": [
+        "^9.1.2",
+        "^9.2.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "prettier-plugin-svelte",
+      "repoCount": 10,
+      "versions": [
+        "^3.5.2",
+        "^4.0.1",
+        "^4.0.0",
+        "^3.3.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "@types/node",
+      "repoCount": 9,
+      "versions": [
+        "^25.2.3",
+        "^24",
+        "^24.10.4"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-layers-explorer",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "podman-desktop/eslint-plugin",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "autoprefixer",
+      "repoCount": 9,
+      "versions": [
+        "^10.5.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-file-progress",
+      "repoCount": 8,
+      "versions": [
+        "^3.0.2",
+        "^4.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-svelte",
+      "repoCount": 8,
+      "versions": [
+        "^3.17.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "svelte-eslint-parser",
+      "repoCount": 8,
+      "versions": [
+        "^1.6.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "@vitest/eslint-plugin",
+      "repoCount": 8,
+      "versions": [
+        "^1.6.17",
+        "^1.6.18"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "svelte-check",
+      "repoCount": 7,
+      "versions": [
+        "^4.4.8",
+        "^4.4.7"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "@biomejs/biome",
+      "repoCount": 6,
+      "versions": [
+        "^2.4.15",
+        "^2.3.15"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/eslint-plugin"
+      ]
+    },
+    {
+      "package": "js-yaml",
+      "repoCount": 6,
+      "versions": [
+        "^4.1.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-postgresql",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "husky",
+      "repoCount": 5,
+      "versions": [
+        "^9.1.7"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "containers/podman-desktop-extension-ai-lab",
+        "podman-desktop/eslint-plugin"
+      ]
+    },
+    {
+      "package": "lint-staged",
+      "repoCount": 5,
+      "versions": [
+        "^17.0.5",
+        "^16.4.0",
+        "^16.2.7"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "containers/podman-desktop-extension-ai-lab",
+        "podman-desktop/eslint-plugin"
+      ]
+    },
+    {
+      "package": "svelte",
+      "repoCount": 5,
+      "versions": [
+        "5.55.9"
+      ],
+      "repos": [
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "adm-zip",
+      "repoCount": 4,
+      "versions": [
+        "^0.5.17"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-apple-container",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "mkdirp",
+      "repoCount": 4,
+      "versions": [
+        "^3.0.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-minikube",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "@commitlint/cli",
+      "repoCount": 4,
+      "versions": [
+        "^21.0.1",
+        "^20.5.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "@commitlint/config-conventional",
+      "repoCount": 4,
+      "versions": [
+        "^21.0.1",
+        "^20.5.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "@kubernetes/client-node",
+      "repoCount": 3,
+      "versions": [
+        "^1.4.0",
+        "1.4.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-kreate",
+        "redhat-developer/podman-desktop-sandbox-ext"
+      ]
+    },
+    {
+      "package": "@octokit/rest",
+      "repoCount": 3,
+      "versions": [
+        "^22.0.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-minikube"
+      ]
+    },
+    {
+      "package": "commitlint",
+      "repoCount": 3,
+      "versions": [
+        "^21.0.1",
+        "^20.5.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-apple-container",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "isomorphic-ws",
+      "repoCount": 3,
+      "versions": [
+        "5.0.0",
+        "^5.0.0"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard"
+      ]
+    },
+    {
+      "package": "@playwright/test",
+      "repoCount": 3,
+      "versions": [
+        "1.60.0",
+        "^1.60.0"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "@tsconfig/strictest",
+      "repoCount": 3,
+      "versions": [
+        "^2.0.8",
+        "^2.0.6"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard"
+      ]
+    },
+    {
+      "package": "cross-env",
+      "repoCount": 3,
+      "versions": [
+        "10.1.0",
+        "^10.1.0"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "xvfb-maybe",
+      "repoCount": 3,
+      "versions": [
+        "^0.2.1"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "node-gyp",
+      "repoCount": 3,
+      "versions": [
+        "^12.3.0",
+        "^12.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "mustache",
+      "repoCount": 2,
+      "versions": [
+        "^4.2.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop"
+      ]
+    },
+    {
+      "package": "tmp-promise",
+      "repoCount": 2,
+      "versions": [
+        "^3.0.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-minikube"
+      ]
+    },
+    {
+      "package": "tsx",
+      "repoCount": 2,
+      "versions": [
+        "^4.22.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-apple-container"
+      ]
+    },
+    {
+      "package": "zod",
+      "repoCount": 2,
+      "versions": [
+        "^4.4.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "ssh2",
+      "repoCount": 2,
+      "versions": [
+        "1.17.0",
+        "^1.17.0"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "msw",
+      "repoCount": 2,
+      "versions": [
+        "^2.14.6"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "7zip-min",
+      "repoCount": 2,
+      "versions": [
+        "^3.0.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-minikube",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "validator",
+      "repoCount": 2,
+      "versions": [
+        "^13.15.35"
+      ],
+      "repos": [
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-layers-explorer"
+      ]
+    },
+    {
+      "package": "eslint-plugin-better-tailwindcss",
+      "repoCount": 2,
+      "versions": [
+        "^4.5.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard"
+      ]
+    },
+    {
+      "package": "@podman-desktop/tests-playwright",
+      "repoCount": 2,
+      "versions": [
+        "^1.27.1"
+      ],
+      "repos": [
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "byline",
+      "repoCount": 2,
+      "versions": [
+        "^5.0.0"
+      ],
+      "repos": [
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "copyfiles",
+      "repoCount": 2,
+      "versions": [
+        "^2.4.1"
+      ],
+      "repos": [
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "openapi-fetch",
+      "repoCount": 2,
+      "versions": [
+        "^0.17.0"
+      ],
+      "repos": [
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    }
+  ]
+}
