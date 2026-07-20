@@ -1,0 +1,5876 @@
+{
+  "generatedAt": "2026-07-20T11:46:53.280Z",
+  "globalStats": {
+    "totalRepos": 25,
+    "totalAlerts": 80,
+    "totalDependabotPRs": 47,
+    "totalCoverageGap": 183,
+    "totalCoverageGapSecurityAlerts": 31,
+    "totalCoverageGapOutdated": 152,
+    "totalFailingPRs": 25,
+    "totalOutdatedPackages": 161,
+    "sharedDependencies": 63
+  },
+  "repositories": [
+    {
+      "owner": "podman-desktop",
+      "repo": "podman-desktop",
+      "fullName": "podman-desktop/podman-desktop",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 18262,
+          "title": "chore(deps): bump @floating-ui/dom from 1.7.6 to 1.8.0",
+          "state": "open",
+          "createdAt": "2026-07-13T03:19:18Z",
+          "updatedAt": "2026-07-13T03:19:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/18262",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 18194,
+          "title": "chore(deps): bump stream-json from 2.1.0 to 3.5.0",
+          "state": "open",
+          "createdAt": "2026-07-08T03:10:19Z",
+          "updatedAt": "2026-07-14T18:35:12Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/18194",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 18129,
+          "title": "chore(deps-dev): bump prettier from 3.8.4 to 3.9.4",
+          "state": "open",
+          "createdAt": "2026-07-01T03:11:23Z",
+          "updatedAt": "2026-07-13T03:20:51Z",
+          "htmlUrl": "https://github.com/podman-desktop/podman-desktop/pull/18129",
+          "ciStatus": "pending",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@segment/analytics-node": "^3.1.0",
+        "chokidar": "^3.6.0",
+        "express": "^5.2.1",
+        "isomorphic-ws": "5.0.0",
+        "tar-fs": "^3.1.3",
+        "ssh2": "1.17.0",
+        "ws": "8.21.0",
+        "@biomejs/biome": "^2.5.3",
+        "@commitlint/cli": "^21.2.1",
+        "@commitlint/config-conventional": "^21.2.0",
+        "@electron/fuses": "^2.1.3",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.6",
+        "@eslint/js": "^10.0.1",
+        "@playwright/test": "1.61.1",
+        "@podman-desktop/api": "workspace:",
+        "@tsconfig/strictest": "^2.0.8",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "@vitest/eslint-plugin": "^1.6.23",
+        "cross-env": "10.1.0",
+        "dts-for-context-bridge": "0.7.1",
+        "electron": "43.1.0",
+        "electron-builder": "26.8.2",
+        "eslint": "^10.7.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-n": "^18.2.2",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.1.0",
+        "eslint-plugin-unicorn": "^71.1.0",
+        "fzstd": "^0.1.1",
+        "get-tsconfig": "^4.14.0",
+        "globals": "^17.7.0",
+        "husky": "^9.1.7",
+        "jsonc-parser": "^3.3.1",
+        "lint-staged": "^17.0.8",
+        "minimist": "^1.2.8",
+        "msw": "^2.15.0",
+        "prettier": "^3.8.4",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.4",
+        "mustache": "^4.2.0",
+        "vitest": "^4.1.10",
+        "xvfb-maybe": "^0.2.1"
+      },
+      "outdatedPackages": [
+        {
+          "package": "chokidar",
+          "currentVersion": "3.6.0",
+          "latestVersion": "5.0.0",
+          "outdated": true
+        },
+        {
+          "package": "ws",
+          "currentVersion": "8.21.0",
+          "latestVersion": "8.21.1",
+          "outdated": true
+        },
+        {
+          "package": "@biomejs/biome",
+          "currentVersion": "2.5.3",
+          "latestVersion": "2.5.4",
+          "outdated": true
+        },
+        {
+          "package": "@podman-desktop/api",
+          "currentVersion": "workspace:",
+          "latestVersion": "1.28.2",
+          "outdated": true
+        },
+        {
+          "package": "electron",
+          "currentVersion": "43.1.0",
+          "latestVersion": "43.1.1",
+          "outdated": true
+        },
+        {
+          "package": "electron-builder",
+          "currentVersion": "26.8.2",
+          "latestVersion": "26.15.3",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "71.1.0",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "lint-staged",
+          "currentVersion": "17.0.8",
+          "latestVersion": "17.1.0",
+          "outdated": true
+        },
+        {
+          "package": "prettier",
+          "currentVersion": "3.8.4",
+          "latestVersion": "3.9.5",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "6.0.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vite",
+          "currentVersion": "8.1.4",
+          "latestVersion": "8.1.5",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 3,
+        "coverageGap": 14,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 14,
+        "failingPRs": 2,
+        "totalOutdated": 14
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "chokidar",
+          "type": "outdated",
+          "currentVersion": "3.6.0",
+          "latestVersion": "5.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "ws",
+          "type": "outdated",
+          "currentVersion": "8.21.0",
+          "latestVersion": "8.21.1",
+          "severity": "none"
+        },
+        {
+          "package": "@biomejs/biome",
+          "type": "outdated",
+          "currentVersion": "2.5.3",
+          "latestVersion": "2.5.4",
+          "severity": "none"
+        },
+        {
+          "package": "@podman-desktop/api",
+          "type": "outdated",
+          "currentVersion": "workspace:",
+          "latestVersion": "1.28.2",
+          "severity": "none"
+        },
+        {
+          "package": "electron",
+          "type": "outdated",
+          "currentVersion": "43.1.0",
+          "latestVersion": "43.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "electron-builder",
+          "type": "outdated",
+          "currentVersion": "26.8.2",
+          "latestVersion": "26.15.3",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "type": "outdated",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "type": "outdated",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "71.1.0",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "lint-staged",
+          "type": "outdated",
+          "currentVersion": "17.0.8",
+          "latestVersion": "17.1.0",
+          "severity": "none"
+        },
+        {
+          "package": "prettier",
+          "type": "outdated",
+          "currentVersion": "3.8.4",
+          "latestVersion": "3.9.5",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "6.0.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "vite",
+          "type": "outdated",
+          "currentVersion": "8.1.4",
+          "latestVersion": "8.1.5",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-bootc",
+      "fullName": "podman-desktop/extension-bootc",
+      "alerts": [
+        {
+          "number": 109,
+          "state": "open",
+          "severity": "low",
+          "package": "@babel/core",
+          "vulnerableVersionRange": "<= 7.29.0",
+          "firstPatchedVersion": "7.29.6",
+          "createdAt": "2026-06-27T15:16:52Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/security/dependabot/109"
+        },
+        {
+          "number": 108,
+          "state": "open",
+          "severity": "low",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.0.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-22T21:28:53Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/security/dependabot/108"
+        },
+        {
+          "number": 107,
+          "state": "open",
+          "severity": "medium",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.0.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-22T20:54:58Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/security/dependabot/107"
+        },
+        {
+          "number": 105,
+          "state": "open",
+          "severity": "low",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.0.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-22T20:48:39Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/security/dependabot/105"
+        },
+        {
+          "number": 104,
+          "state": "open",
+          "severity": "high",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.23.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-22T17:36:15Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/security/dependabot/104"
+        },
+        {
+          "number": 103,
+          "state": "open",
+          "severity": "medium",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.0.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-20T12:41:22Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/security/dependabot/103"
+        },
+        {
+          "number": 102,
+          "state": "open",
+          "severity": "high",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.23.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-20T09:35:20Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/security/dependabot/102"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 2645,
+          "title": "chore: bump eslint-plugin-sonarjs from 4.0.3 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:05:25Z",
+          "updatedAt": "2026-07-20T02:34:53Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2645",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 2642,
+          "title": "chore: bump actions/setup-node from 6 to 7",
+          "state": "open",
+          "createdAt": "2026-07-15T02:03:18Z",
+          "updatedAt": "2026-07-15T02:03:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2642",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 2635,
+          "title": "chore: bump @types/node from 24.13.2 to 26.1.1",
+          "state": "open",
+          "createdAt": "2026-07-09T02:06:20Z",
+          "updatedAt": "2026-07-20T02:34:53Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2635",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 2625,
+          "title": "chore: bump js-yaml from 4.2.0 to 5.2.1",
+          "state": "open",
+          "createdAt": "2026-07-02T02:06:13Z",
+          "updatedAt": "2026-07-02T02:06:18Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2625",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 2593,
+          "title": "chore: bump actions/checkout from 6 to 7",
+          "state": "open",
+          "createdAt": "2026-06-19T02:03:07Z",
+          "updatedAt": "2026-06-29T14:39:34Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2593",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 2459,
+          "title": "chore(deps-dev): bump the eslint group across 1 directory with 4 updates",
+          "state": "open",
+          "createdAt": "2026-04-10T02:06:22Z",
+          "updatedAt": "2026-07-20T02:07:01Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-bootc/pull/2459",
+          "ciStatus": "passing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@xterm/addon-attach": "^0.12.0",
+        "js-yaml": "^4.2.0",
+        "@biomejs/biome": "^2.5.4",
+        "@commitlint/cli": "^21.2.1",
+        "@commitlint/config-conventional": "^21.2.0",
+        "@eslint/compat": "^2.0.2",
+        "@eslint/eslintrc": "^3.3.3",
+        "@eslint/js": "^9.39.2",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4.0.10",
+        "autoprefixer": "^10.5.4",
+        "commitlint": "^21.2.1",
+        "concurrently": "^10.0.3",
+        "eslint": "^9.39.2",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^14.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.21.0",
+        "eslint-plugin-unicorn": "^65.0.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.1.0",
+        "prettier": "^3.9.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte-check": "^4.7.3",
+        "svelte-eslint-parser": "^1.8.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "8.1.5",
+        "vitest": "^4.1.10"
+      },
+      "outdatedPackages": [
+        {
+          "package": "js-yaml",
+          "currentVersion": "4.2.0",
+          "latestVersion": "5.2.1",
+          "outdated": true
+        },
+        {
+          "package": "@eslint/compat",
+          "currentVersion": "2.0.2",
+          "latestVersion": "2.1.0",
+          "outdated": true
+        },
+        {
+          "package": "@eslint/eslintrc",
+          "currentVersion": "3.3.3",
+          "latestVersion": "3.3.6",
+          "outdated": true
+        },
+        {
+          "package": "@eslint/js",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.0.1",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "4.0.10",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "65.0.1",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 7,
+        "totalDependabotPRs": 6,
+        "coverageGap": 12,
+        "coverageGapSecurityAlerts": 2,
+        "coverageGapOutdated": 10,
+        "failingPRs": 1,
+        "totalOutdated": 10
+      },
+      "coverageGapPackages": [
+        "@babel/core",
+        "undici"
+      ],
+      "coverageGapDetailed": [
+        {
+          "package": "@babel/core",
+          "type": "security-alert",
+          "severity": "low"
+        },
+        {
+          "package": "undici",
+          "type": "security-alert",
+          "severity": "low"
+        },
+        {
+          "package": "js-yaml",
+          "type": "outdated",
+          "currentVersion": "4.2.0",
+          "latestVersion": "5.2.1",
+          "severity": "none"
+        },
+        {
+          "package": "@eslint/compat",
+          "type": "outdated",
+          "currentVersion": "2.0.2",
+          "latestVersion": "2.1.0",
+          "severity": "none"
+        },
+        {
+          "package": "@eslint/eslintrc",
+          "type": "outdated",
+          "currentVersion": "3.3.3",
+          "latestVersion": "3.3.6",
+          "severity": "none"
+        },
+        {
+          "package": "@eslint/js",
+          "type": "outdated",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.0.1",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "4.0.10",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "type": "outdated",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "65.0.1",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-kreate",
+      "fullName": "podman-desktop/extension-kreate",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 869,
+          "title": "chore(deps-dev): bump eslint-plugin-sonarjs from 4.1.0 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:04:26Z",
+          "updatedAt": "2026-07-17T02:47:31Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kreate/pull/869",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@kubernetes/client-node": "1.4.0",
+        "@scalar/openapi-parser": "^0.28.10",
+        "js-yaml": "^4.3.0",
+        "zod": "^4.4.3",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.0.1",
+        "@vitest/coverage-v8": "^4",
+        "concurrently": "^10.0.3",
+        "eslint": "^8.56.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-sonarjs": "^4.1.0",
+        "openapi-types": "^12.1.3",
+        "prettier": "^3.9.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "typescript": "5.9.3",
+        "vite": "^8.1.5",
+        "vitest": "^4"
+      },
+      "outdatedPackages": [
+        {
+          "package": "js-yaml",
+          "currentVersion": "4.3.0",
+          "latestVersion": "5.2.1",
+          "outdated": true
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "currentVersion": "8.0.1",
+          "latestVersion": "8.64.0",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "8.56.0",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 1,
+        "coverageGap": 7,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 7,
+        "failingPRs": 1,
+        "totalOutdated": 7
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "js-yaml",
+          "type": "outdated",
+          "currentVersion": "4.3.0",
+          "latestVersion": "5.2.1",
+          "severity": "none"
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "type": "outdated",
+          "currentVersion": "8.0.1",
+          "latestVersion": "8.64.0",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "8.56.0",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-compose",
+      "fullName": "podman-desktop/extension-compose",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "outdatedPackages": [],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 0,
+        "failingPRs": 0,
+        "totalOutdated": 0
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-kind",
+      "fullName": "podman-desktop/extension-kind",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 191,
+          "title": "chore(deps-dev): bump eslint-plugin-simple-import-sort from 12.1.1 to 14.0.0",
+          "state": "open",
+          "createdAt": "2026-07-17T02:05:40Z",
+          "updatedAt": "2026-07-17T02:05:44Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/pull/191",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 188,
+          "title": "chore(deps-dev): bump eslint-plugin-unicorn from 70.0.0 to 72.0.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:05:41Z",
+          "updatedAt": "2026-07-15T02:05:47Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/pull/188",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 187,
+          "title": "chore(deps-dev): bump eslint-plugin-sonarjs from 4.0.3 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:05:07Z",
+          "updatedAt": "2026-07-15T02:05:11Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/pull/187",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 186,
+          "title": "chore(deps): bump actions/setup-node from 6.4.0 to 7.0.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:04:26Z",
+          "updatedAt": "2026-07-15T02:04:32Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/pull/186",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 155,
+          "title": "chore(deps): bump actions/checkout from 6.0.2 to 7.0.0",
+          "state": "open",
+          "createdAt": "2026-06-19T02:04:05Z",
+          "updatedAt": "2026-07-03T14:18:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kind/pull/155",
+          "ciStatus": "pending",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@kubernetes/client-node": "^1.4.0",
+        "@octokit/rest": "^22.0.1",
+        "@podman-desktop/api": "1.28.2",
+        "mustache": "^4.2.0",
+        "yaml": "^2.9.0",
+        "@biomejs/biome": "^2.5.4",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.6",
+        "@eslint/js": "^10.0.1",
+        "@octokit/core": "^7.0.6",
+        "@octokit/types": "^16.0.0",
+        "@types/node": "^25.2.3",
+        "@vitest/coverage-v8": "^4.1.8",
+        "adm-zip": "^0.6.0",
+        "eslint": "^10.7.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^70.0.0",
+        "globals": "^17.7.0",
+        "mkdirp": "^3.0.1",
+        "tmp-promise": "^3.0.3",
+        "tsx": "^4.23.1",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.5",
+        "vitest": "^4.1.8"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@types/node",
+          "currentVersion": "25.2.3",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "4.1.8",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "currentVersion": "12.1.1",
+          "latestVersion": "14.0.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "70.0.0",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4.1.8",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 5,
+        "coverageGap": 8,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 8,
+        "failingPRs": 2,
+        "totalOutdated": 8
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "25.2.3",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "4.1.8",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "type": "outdated",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "type": "outdated",
+          "currentVersion": "12.1.1",
+          "latestVersion": "14.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "70.0.0",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "4.1.8",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-minikube",
+      "fullName": "podman-desktop/extension-minikube",
+      "alerts": [
+        {
+          "number": 26,
+          "state": "open",
+          "severity": "medium",
+          "package": "vite",
+          "vulnerableVersionRange": "<= 6.4.2",
+          "firstPatchedVersion": "6.4.3",
+          "createdAt": "2026-06-16T02:19:14Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/security/dependabot/26"
+        },
+        {
+          "number": 25,
+          "state": "open",
+          "severity": "high",
+          "package": "vite",
+          "vulnerableVersionRange": "<= 6.4.2",
+          "firstPatchedVersion": "6.4.3",
+          "createdAt": "2026-06-16T02:19:14Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/security/dependabot/25"
+        },
+        {
+          "number": 22,
+          "state": "open",
+          "severity": "critical",
+          "package": "vitest",
+          "vulnerableVersionRange": "< 3.2.6",
+          "firstPatchedVersion": "3.2.6",
+          "createdAt": "2026-06-08T22:53:50Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/security/dependabot/22"
+        },
+        {
+          "number": 21,
+          "state": "open",
+          "severity": "critical",
+          "package": "vitest",
+          "vulnerableVersionRange": "< 3.2.6",
+          "firstPatchedVersion": "3.2.6",
+          "createdAt": "2026-06-08T22:16:54Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/security/dependabot/21"
+        },
+        {
+          "number": 16,
+          "state": "open",
+          "severity": "medium",
+          "package": "vite",
+          "vulnerableVersionRange": "<= 6.4.1",
+          "firstPatchedVersion": "6.4.2",
+          "createdAt": "2026-04-21T15:40:56Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/security/dependabot/16"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 1042,
+          "title": "chore(deps-dev): bump eslint-plugin-simple-import-sort from 12.1.1 to 14.0.0",
+          "state": "open",
+          "createdAt": "2026-07-17T02:05:04Z",
+          "updatedAt": "2026-07-17T07:27:18Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/pull/1042",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 1039,
+          "title": "chore(deps-dev): bump eslint-plugin-sonarjs from 4.0.3 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:05:03Z",
+          "updatedAt": "2026-07-17T02:15:50Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/pull/1039",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 1003,
+          "title": "chore(deps-dev): bump vitest from 2.1.9 to 3.2.6 in the npm_and_yarn group across 1 directory",
+          "state": "open",
+          "createdAt": "2026-06-10T02:22:06Z",
+          "updatedAt": "2026-07-10T02:30:45Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-minikube/pull/1003",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@octokit/rest": "^22.0.1",
+        "@types/node": "^24",
+        "tmp-promise": "^3.0.3",
+        "7zip-min": "^3.0.1",
+        "@eslint/compat": "^2.1.0",
+        "@podman-desktop/api": "^1.28.2",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^2.0.5",
+        "eslint": "^9.39.2",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^3.0.2",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^65.0.1",
+        "globals": "^17.7.0",
+        "mkdirp": "^3.0.1",
+        "prettier": "^3.9.5",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "validator": "^13.15.35",
+        "vite": "^8.1.5",
+        "vitest": "^2.1.9"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@types/node",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "2.0.5",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "currentVersion": "3.0.2",
+          "latestVersion": "4.0.0-beta.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "currentVersion": "12.1.1",
+          "latestVersion": "14.0.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "65.0.1",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "2.1.9",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 5,
+        "totalDependabotPRs": 3,
+        "coverageGap": 10,
+        "coverageGapSecurityAlerts": 2,
+        "coverageGapOutdated": 8,
+        "failingPRs": 3,
+        "totalOutdated": 9
+      },
+      "coverageGapPackages": [
+        "vite",
+        "vitest"
+      ],
+      "coverageGapDetailed": [
+        {
+          "package": "vite",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "vitest",
+          "type": "security-alert",
+          "severity": "critical"
+        },
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "2.0.5",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "type": "outdated",
+          "currentVersion": "3.0.2",
+          "latestVersion": "4.0.0-beta.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "type": "outdated",
+          "currentVersion": "12.1.1",
+          "latestVersion": "14.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "65.0.1",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-apple-container",
+      "fullName": "podman-desktop/extension-apple-container",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 407,
+          "title": "chore(deps-dev): bump eslint-plugin-simple-import-sort from 13.0.0 to 14.0.0",
+          "state": "open",
+          "createdAt": "2026-07-17T03:05:52Z",
+          "updatedAt": "2026-07-17T03:05:56Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/407",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 405,
+          "title": "chore(deps): bump inversify from 7.11.0 to 8.2.1",
+          "state": "open",
+          "createdAt": "2026-07-17T03:05:11Z",
+          "updatedAt": "2026-07-17T03:05:16Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/405",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 401,
+          "title": "chore(deps-dev): bump eslint-plugin-unicorn from 69.0.0 to 72.0.0",
+          "state": "open",
+          "createdAt": "2026-07-15T03:05:40Z",
+          "updatedAt": "2026-07-20T03:14:26Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/401",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 398,
+          "title": "chore(deps): bump actions/setup-node from 6 to 7",
+          "state": "open",
+          "createdAt": "2026-07-15T03:04:09Z",
+          "updatedAt": "2026-07-15T03:04:14Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/398",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 341,
+          "title": "chore(deps): bump codecov/codecov-action from 6 to 7",
+          "state": "open",
+          "createdAt": "2026-06-08T03:04:51Z",
+          "updatedAt": "2026-07-03T14:16:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/341",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 276,
+          "title": "chore(deps): bump pnpm/action-setup from 5 to 6",
+          "state": "open",
+          "createdAt": "2026-04-13T03:13:41Z",
+          "updatedAt": "2026-06-29T07:24:59Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-apple-container/pull/276",
+          "ciStatus": "pending",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "inversify": "^7.11.0",
+        "@biomejs/biome": "^2.5.4",
+        "@commitlint/cli": "^21.2.1",
+        "@commitlint/config-conventional": "^21.2.0",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.6",
+        "@eslint/js": "^10.0.1",
+        "@podman-desktop/api": "^1.28.2",
+        "@types/node": "^24.13.3",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "@vitest/eslint-plugin": "^1.6.23",
+        "adm-zip": "^0.6.0",
+        "autoprefixer": "^10.5.4",
+        "commitlint": "^21.2.1",
+        "concurrently": "^10.0.3",
+        "eslint": "^10.7.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.2.0",
+        "eslint-plugin-unicorn": "^69.0.0",
+        "globals": "^17.7.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.1.0",
+        "tsx": "^4.23.1",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "8.1.5",
+        "vitest": "^4.1.10"
+      },
+      "outdatedPackages": [
+        {
+          "package": "inversify",
+          "currentVersion": "7.11.0",
+          "latestVersion": "8.2.1",
+          "outdated": true
+        },
+        {
+          "package": "@types/node",
+          "currentVersion": "24.13.3",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "69.0.0",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 6,
+        "coverageGap": 5,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 5,
+        "failingPRs": 1,
+        "totalOutdated": 5
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "inversify",
+          "type": "outdated",
+          "currentVersion": "7.11.0",
+          "latestVersion": "8.2.1",
+          "severity": "none"
+        },
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "24.13.3",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "type": "outdated",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "69.0.0",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-podman-quadlet",
+      "fullName": "podman-desktop/extension-podman-quadlet",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 1634,
+          "title": "chore(deps-dev): bump eslint-plugin-sonarjs from 4.0.3 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:05:23Z",
+          "updatedAt": "2026-07-20T02:23:31Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-podman-quadlet/pull/1634",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 1583,
+          "title": "chore(deps-dev): bump @podman-desktop/api from 1.26.2 to 1.28.2",
+          "state": "open",
+          "createdAt": "2026-06-29T02:08:29Z",
+          "updatedAt": "2026-07-20T02:23:43Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-podman-quadlet/pull/1583",
+          "ciStatus": "pending",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "@vitest/eslint-plugin": "^1.6.23",
+        "autoprefixer": "^10.5.4",
+        "concurrently": "^10.0.3",
+        "eslint": "^10.7.0",
+        "@eslint/js": "^10.0.1",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.6",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^14.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.21.0",
+        "eslint-plugin-unicorn": "^72.0.0",
+        "prettier": "^3.9.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte": "5.56.6",
+        "svelte-check": "^4.7.3",
+        "svelte-eslint-parser": "^1.8.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.5",
+        "vitest": "^4.1.10",
+        "globals": "^17.7.0"
+      },
+      "outdatedPackages": [
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 2,
+        "coverageGap": 3,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 3,
+        "failingPRs": 1,
+        "totalOutdated": 3
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "type": "outdated",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-grype",
+      "fullName": "podman-desktop/extension-grype",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.6",
+        "@eslint/js": "^10.0.1",
+        "@podman-desktop/api": "^1.28.2",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "@vitest/eslint-plugin": "^1.6.23",
+        "autoprefixer": "^10.5.4",
+        "eslint": "^10.7.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^14.0.0",
+        "eslint-plugin-sonarjs": "^4.1.0",
+        "eslint-plugin-svelte": "^3.21.0",
+        "eslint-plugin-unicorn": "^72.0.0",
+        "globals": "^17.6.0",
+        "prettier": "^3.8.4",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte-eslint-parser": "^1.8.0",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.0.16",
+        "vitest": "^4.1.10"
+      },
+      "outdatedPackages": [
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "outdated": true
+        },
+        {
+          "package": "globals",
+          "currentVersion": "17.6.0",
+          "latestVersion": "17.7.0",
+          "outdated": true
+        },
+        {
+          "package": "prettier",
+          "currentVersion": "3.8.4",
+          "latestVersion": "3.9.5",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "6.0.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vite",
+          "currentVersion": "8.0.16",
+          "latestVersion": "8.1.5",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 6,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 6,
+        "failingPRs": 0,
+        "totalOutdated": 6
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "type": "outdated",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "severity": "none"
+        },
+        {
+          "package": "globals",
+          "type": "outdated",
+          "currentVersion": "17.6.0",
+          "latestVersion": "17.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "prettier",
+          "type": "outdated",
+          "currentVersion": "3.8.4",
+          "latestVersion": "3.9.5",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "6.0.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "vite",
+          "type": "outdated",
+          "currentVersion": "8.0.16",
+          "latestVersion": "8.1.5",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-github",
+      "fullName": "podman-desktop/extension-github",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 254,
+          "title": "chore(deps-dev): Bump eslint-plugin-simple-import-sort from 13.0.0 to 14.0.0",
+          "state": "open",
+          "createdAt": "2026-07-17T02:04:47Z",
+          "updatedAt": "2026-07-17T02:04:52Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-github/pull/254",
+          "ciStatus": "pending",
+          "package": "eslint-plugin-simple-import-sort"
+        },
+        {
+          "number": 253,
+          "title": "chore(deps-dev): Bump @biomejs/biome from 2.5.3 to 2.5.4",
+          "state": "open",
+          "createdAt": "2026-07-16T02:04:56Z",
+          "updatedAt": "2026-07-16T02:05:00Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-github/pull/253",
+          "ciStatus": "failing",
+          "package": "@biomejs/biome"
+        },
+        {
+          "number": 251,
+          "title": "chore(deps-dev): Bump eslint-plugin-unicorn from 71.1.0 to 72.0.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:04:36Z",
+          "updatedAt": "2026-07-15T02:18:32Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-github/pull/251",
+          "ciStatus": "pending",
+          "package": "eslint-plugin-unicorn"
+        },
+        {
+          "number": 250,
+          "title": "chore(deps): Bump actions/setup-node from 6 to 7",
+          "state": "open",
+          "createdAt": "2026-07-15T02:03:59Z",
+          "updatedAt": "2026-07-15T02:04:04Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-github/pull/250",
+          "ciStatus": "pending",
+          "package": "actions/setup-node"
+        }
+      ],
+      "dependencies": {
+        "@biomejs/biome": "^2.5.3",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.6",
+        "@eslint/js": "^10.0.1",
+        "@octokit/rest": "^22.0.1",
+        "@podman-desktop/api": "1.28.2",
+        "@types/node": "^24",
+        "@vitest/coverage-v8": "^4.1.9",
+        "eslint": "^10.7.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.2.0",
+        "eslint-plugin-unicorn": "^71.1.0",
+        "globals": "^17.7.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.5",
+        "vitest": "^4.1.9"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@biomejs/biome",
+          "currentVersion": "2.5.3",
+          "latestVersion": "2.5.4",
+          "outdated": true
+        },
+        {
+          "package": "@types/node",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "4.1.9",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "71.1.0",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4.1.9",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 4,
+        "coverageGap": 5,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 5,
+        "failingPRs": 1,
+        "totalOutdated": 8
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "4.1.9",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "type": "outdated",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "4.1.9",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-kubernetes-contexts",
+      "fullName": "podman-desktop/extension-kubernetes-contexts",
+      "alerts": [
+        {
+          "number": 34,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-26T10:52:17Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-contexts/security/dependabot/34"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 591,
+          "title": "build(deps-dev): bump eslint-plugin-sonarjs from 4.1.0 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:06:07Z",
+          "updatedAt": "2026-07-20T02:41:07Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-contexts/pull/591",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "isomorphic-ws": "^5.0.0",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/js": "^10.0.1",
+        "@eslint/eslintrc": "^3.3.6",
+        "@tsconfig/strictest": "^2.0.6",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "@vitest/eslint-plugin": "^1.6.23",
+        "autoprefixer": "^10.5.4",
+        "concurrently": "^10.0.3",
+        "eslint": "^10.7.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-better-tailwindcss": "^4.7.0",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^14.0.0",
+        "eslint-plugin-sonarjs": "^4.1.0",
+        "eslint-plugin-svelte": "^3.21.0",
+        "eslint-plugin-unicorn": "^72.0.0",
+        "node-gyp": "^13.0.1",
+        "prettier": "^3.9.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte": "5.56.6",
+        "svelte-check": "^4.7.3",
+        "svelte-eslint-parser": "^1.8.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.5",
+        "vitest": "^4.1.0"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@tsconfig/strictest",
+          "currentVersion": "2.0.6",
+          "latestVersion": "2.0.8",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-import",
+          "currentVersion": "2.31.0",
+          "latestVersion": "2.32.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 1,
+        "totalDependabotPRs": 1,
+        "coverageGap": 8,
+        "coverageGapSecurityAlerts": 1,
+        "coverageGapOutdated": 7,
+        "failingPRs": 1,
+        "totalOutdated": 7
+      },
+      "coverageGapPackages": [
+        "rollup"
+      ],
+      "coverageGapDetailed": [
+        {
+          "package": "rollup",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "@tsconfig/strictest",
+          "type": "outdated",
+          "currentVersion": "2.0.6",
+          "latestVersion": "2.0.8",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "type": "outdated",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-import",
+          "type": "outdated",
+          "currentVersion": "2.31.0",
+          "latestVersion": "2.32.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "type": "outdated",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-kubernetes-dashboard",
+      "fullName": "podman-desktop/extension-kubernetes-dashboard",
+      "alerts": [
+        {
+          "number": 87,
+          "state": "open",
+          "severity": "critical",
+          "package": "vitest",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.1.0",
+          "firstPatchedVersion": "4.1.0",
+          "createdAt": "2026-06-08T16:39:45Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-dashboard/security/dependabot/87"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 1167,
+          "title": "build(deps-dev): Bump eslint-plugin-sonarjs from 4.1.0 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:05:07Z",
+          "updatedAt": "2026-07-20T10:44:52Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-kubernetes-dashboard/pull/1167",
+          "ciStatus": "failing",
+          "package": "eslint-plugin-sonarjs"
+        }
+      ],
+      "dependencies": {
+        "isomorphic-ws": "^5.0.0",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.6",
+        "@eslint/js": "^10.0.1",
+        "@tsconfig/strictest": "^2.0.6",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4",
+        "@vitest/eslint-plugin": "^1.6.23",
+        "autoprefixer": "^10.5.4",
+        "concurrently": "^10.0.3",
+        "cronstrue": "^3.24.0",
+        "eslint": "^10.7.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-better-tailwindcss": "^4.7.0",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^14.0.0",
+        "eslint-plugin-sonarjs": "^4.1.0",
+        "eslint-plugin-svelte": "^3.21.0",
+        "eslint-plugin-unicorn": "^72.0.0",
+        "node-gyp": "^13.0.1",
+        "prettier": "^3.9.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte": "5.56.6",
+        "svelte-check": "^4.7.3",
+        "svelte-eslint-parser": "^1.8.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.5",
+        "vitest": "^4"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@tsconfig/strictest",
+          "currentVersion": "2.0.6",
+          "latestVersion": "2.0.8",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-import",
+          "currentVersion": "2.31.0",
+          "latestVersion": "2.32.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 1,
+        "totalDependabotPRs": 1,
+        "coverageGap": 7,
+        "coverageGapSecurityAlerts": 1,
+        "coverageGapOutdated": 6,
+        "failingPRs": 1,
+        "totalOutdated": 8
+      },
+      "coverageGapPackages": [
+        "vitest"
+      ],
+      "coverageGapDetailed": [
+        {
+          "package": "vitest",
+          "type": "security-alert",
+          "severity": "critical"
+        },
+        {
+          "package": "@tsconfig/strictest",
+          "type": "outdated",
+          "currentVersion": "2.0.6",
+          "latestVersion": "2.0.8",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "type": "outdated",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-import",
+          "type": "outdated",
+          "currentVersion": "2.31.0",
+          "latestVersion": "2.32.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "type": "outdated",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-layers-explorer",
+      "fullName": "podman-desktop/extension-layers-explorer",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {
+        "tar": "^7.5.20",
+        "@podman-desktop/api": "^1.28.2",
+        "@types/node": "^24",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^6.19.1",
+        "@vitest/coverage-v8": "^4",
+        "eslint": "^8.57.1",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-sonarjs": "^4.2.0",
+        "prettier": "^3.9.5",
+        "typescript": "5.9.3",
+        "validator": "^13.15.35",
+        "vite": "^8.1.5",
+        "vitest": "^4"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@types/node",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "currentVersion": "6.19.1",
+          "latestVersion": "8.64.0",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "8.57.1",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 6,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 6,
+        "failingPRs": 0,
+        "totalOutdated": 6
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "type": "outdated",
+          "currentVersion": "6.19.1",
+          "latestVersion": "8.64.0",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "8.57.1",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-postgresql",
+      "fullName": "podman-desktop/extension-postgresql",
+      "alerts": [
+        {
+          "number": 95,
+          "state": "open",
+          "severity": "critical",
+          "package": "vitest",
+          "vulnerableVersionRange": "< 3.2.6",
+          "firstPatchedVersion": "3.2.6",
+          "createdAt": "2026-06-09T00:07:28Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-postgresql/security/dependabot/95"
+        },
+        {
+          "number": 47,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-26T13:29:09Z",
+          "htmlUrl": "https://github.com/podman-desktop/extension-postgresql/security/dependabot/47"
+        }
+      ],
+      "dependabotPRs": [],
+      "dependencies": {
+        "js-yaml": "^5.2.1",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.0.1",
+        "@vitest/coverage-v8": "^3.2.4",
+        "concurrently": "^10.0.3",
+        "eslint": "^8.56.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-sonarjs": "^4.2.0",
+        "prettier": "^3.9.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte": "5.56.6",
+        "svelte-check": "^4.7.3",
+        "typescript": "5.9.3",
+        "vite": "^8.1.5",
+        "vitest": "^3.2.4"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@typescript-eslint/parser",
+          "currentVersion": "8.0.1",
+          "latestVersion": "8.64.0",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "3.2.4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "8.56.0",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "3.2.4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 2,
+        "totalDependabotPRs": 0,
+        "coverageGap": 6,
+        "coverageGapSecurityAlerts": 2,
+        "coverageGapOutdated": 4,
+        "failingPRs": 0,
+        "totalOutdated": 5
+      },
+      "coverageGapPackages": [
+        "vitest",
+        "rollup"
+      ],
+      "coverageGapDetailed": [
+        {
+          "package": "vitest",
+          "type": "security-alert",
+          "severity": "critical"
+        },
+        {
+          "package": "rollup",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "type": "outdated",
+          "currentVersion": "8.0.1",
+          "latestVersion": "8.64.0",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "3.2.4",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "8.56.0",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "extension-pack-kubernetes",
+      "fullName": "podman-desktop/extension-pack-kubernetes",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "outdatedPackages": [],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 0,
+        "failingPRs": 0,
+        "totalOutdated": 0
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": []
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "eslint-plugin",
+      "fullName": "podman-desktop/eslint-plugin",
+      "alerts": [
+        {
+          "number": 24,
+          "state": "open",
+          "severity": "low",
+          "package": "esbuild",
+          "vulnerableVersionRange": ">= 0.27.3, < 0.28.1",
+          "firstPatchedVersion": "0.28.1",
+          "createdAt": "2026-06-12T20:44:34Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/24"
+        },
+        {
+          "number": 20,
+          "state": "open",
+          "severity": "high",
+          "package": "lodash",
+          "vulnerableVersionRange": ">= 4.0.0, <= 4.17.23",
+          "firstPatchedVersion": "4.18.0",
+          "createdAt": "2026-04-06T03:16:37Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/20"
+        },
+        {
+          "number": 19,
+          "state": "open",
+          "severity": "medium",
+          "package": "lodash",
+          "vulnerableVersionRange": "<= 4.17.23",
+          "firstPatchedVersion": "4.18.0",
+          "createdAt": "2026-04-06T03:16:37Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/19"
+        },
+        {
+          "number": 9,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 10.0.0, < 10.2.3",
+          "firstPatchedVersion": "10.2.3",
+          "createdAt": "2026-02-28T12:04:23Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/9"
+        },
+        {
+          "number": 7,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-26T14:00:51Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/security/dependabot/7"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 129,
+          "title": "chore(deps): bump actions/setup-node from 6.4.0 to 7.0.0",
+          "state": "open",
+          "createdAt": "2026-07-14T03:05:20Z",
+          "updatedAt": "2026-07-14T03:05:21Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/pull/129",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 108,
+          "title": "chore(deps): bump actions/checkout from 6.0.3 to 7.0.0",
+          "state": "open",
+          "createdAt": "2026-06-19T03:04:38Z",
+          "updatedAt": "2026-07-03T14:12:20Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/pull/108",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 51,
+          "title": "chore(deps-dev): bump typescript from 5.9.3 to 6.0.3",
+          "state": "open",
+          "createdAt": "2026-04-17T03:09:20Z",
+          "updatedAt": "2026-05-18T03:53:26Z",
+          "htmlUrl": "https://github.com/podman-desktop/eslint-plugin/pull/51",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@biomejs/biome": "^2.3.15",
+        "@types/eslint": "^9.6.0",
+        "@types/node": "^24",
+        "eslint": "^10.0.0",
+        "eslint-plugin-yml": "^3.1.2",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.0.8",
+        "typescript": "^5.4.0",
+        "typescript-eslint": "^8.55.0",
+        "vite": "^8.0.0",
+        "vite-plugin-dts": "^5.0.3",
+        "vitest": "^4.0.18"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@biomejs/biome",
+          "currentVersion": "2.3.15",
+          "latestVersion": "2.5.4",
+          "outdated": true
+        },
+        {
+          "package": "@types/eslint",
+          "currentVersion": "9.6.0",
+          "latestVersion": "9.6.1",
+          "outdated": true
+        },
+        {
+          "package": "@types/node",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "10.0.0",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-yml",
+          "currentVersion": "3.1.2",
+          "latestVersion": "3.6.0",
+          "outdated": true
+        },
+        {
+          "package": "lint-staged",
+          "currentVersion": "17.0.8",
+          "latestVersion": "17.1.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.4.0",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "typescript-eslint",
+          "currentVersion": "8.55.0",
+          "latestVersion": "8.64.0",
+          "outdated": true
+        },
+        {
+          "package": "vite",
+          "currentVersion": "8.0.0",
+          "latestVersion": "8.1.5",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4.0.18",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 5,
+        "totalDependabotPRs": 3,
+        "coverageGap": 14,
+        "coverageGapSecurityAlerts": 4,
+        "coverageGapOutdated": 10,
+        "failingPRs": 2,
+        "totalOutdated": 10
+      },
+      "coverageGapPackages": [
+        "esbuild",
+        "lodash",
+        "minimatch",
+        "rollup"
+      ],
+      "coverageGapDetailed": [
+        {
+          "package": "esbuild",
+          "type": "security-alert",
+          "severity": "low"
+        },
+        {
+          "package": "lodash",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "minimatch",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "rollup",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "@biomejs/biome",
+          "type": "outdated",
+          "currentVersion": "2.3.15",
+          "latestVersion": "2.5.4",
+          "severity": "none"
+        },
+        {
+          "package": "@types/eslint",
+          "type": "outdated",
+          "currentVersion": "9.6.0",
+          "latestVersion": "9.6.1",
+          "severity": "none"
+        },
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "10.0.0",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-yml",
+          "type": "outdated",
+          "currentVersion": "3.1.2",
+          "latestVersion": "3.6.0",
+          "severity": "none"
+        },
+        {
+          "package": "lint-staged",
+          "type": "outdated",
+          "currentVersion": "17.0.8",
+          "latestVersion": "17.1.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.4.0",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "typescript-eslint",
+          "type": "outdated",
+          "currentVersion": "8.55.0",
+          "latestVersion": "8.64.0",
+          "severity": "none"
+        },
+        {
+          "package": "vite",
+          "type": "outdated",
+          "currentVersion": "8.0.0",
+          "latestVersion": "8.1.5",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "4.0.18",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "podman-desktop",
+      "repo": "e2e",
+      "fullName": "podman-desktop/e2e",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "outdatedPackages": [],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 0,
+        "failingPRs": 0,
+        "totalOutdated": 0
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": []
+    },
+    {
+      "owner": "containers",
+      "repo": "podman-desktop-extension-ai-lab",
+      "fullName": "containers/podman-desktop-extension-ai-lab",
+      "alerts": [
+        {
+          "number": 167,
+          "state": "open",
+          "severity": "low",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.0.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-19T18:39:06Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/167"
+        },
+        {
+          "number": 166,
+          "state": "open",
+          "severity": "medium",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.0.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-19T18:39:06Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/166"
+        },
+        {
+          "number": 164,
+          "state": "open",
+          "severity": "high",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.23.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-19T18:39:06Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/164"
+        },
+        {
+          "number": 163,
+          "state": "open",
+          "severity": "low",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.0.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-19T18:39:05Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/163"
+        },
+        {
+          "number": 162,
+          "state": "open",
+          "severity": "high",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.23.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-18T18:44:30Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/162"
+        },
+        {
+          "number": 161,
+          "state": "open",
+          "severity": "medium",
+          "package": "undici",
+          "vulnerableVersionRange": ">= 7.0.0, < 7.28.0",
+          "firstPatchedVersion": "7.28.0",
+          "createdAt": "2026-06-18T18:44:30Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/161"
+        },
+        {
+          "number": 160,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.4.10",
+          "firstPatchedVersion": "3.4.11",
+          "createdAt": "2026-06-18T18:44:30Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/160"
+        },
+        {
+          "number": 159,
+          "state": "open",
+          "severity": "high",
+          "package": "multer",
+          "vulnerableVersionRange": ">= 1.0.0, < 2.2.0",
+          "firstPatchedVersion": "2.2.0",
+          "createdAt": "2026-06-17T18:44:15Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/159"
+        },
+        {
+          "number": 158,
+          "state": "open",
+          "severity": "medium",
+          "package": "multer",
+          "vulnerableVersionRange": ">= 2.0.0-alpha.1, < 2.2.0",
+          "firstPatchedVersion": "2.2.0",
+          "createdAt": "2026-06-17T18:44:15Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/158"
+        },
+        {
+          "number": 157,
+          "state": "open",
+          "severity": "low",
+          "package": "dompurify",
+          "vulnerableVersionRange": "< 3.4.9",
+          "firstPatchedVersion": "3.4.9",
+          "createdAt": "2026-06-17T07:26:17Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/157"
+        },
+        {
+          "number": 156,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.4.6",
+          "firstPatchedVersion": "3.4.7",
+          "createdAt": "2026-06-17T07:26:17Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/156"
+        },
+        {
+          "number": 155,
+          "state": "open",
+          "severity": "low",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.4.6",
+          "firstPatchedVersion": "N/A",
+          "createdAt": "2026-06-17T07:26:16Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/155"
+        },
+        {
+          "number": 154,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "< 3.4.7",
+          "firstPatchedVersion": "3.4.7",
+          "createdAt": "2026-06-17T07:26:16Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/154"
+        },
+        {
+          "number": 153,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.4.5",
+          "firstPatchedVersion": "3.4.6",
+          "createdAt": "2026-06-17T07:26:16Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/153"
+        },
+        {
+          "number": 152,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.4.5",
+          "firstPatchedVersion": "3.4.6",
+          "createdAt": "2026-06-17T07:26:16Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/152"
+        },
+        {
+          "number": 151,
+          "state": "open",
+          "severity": "high",
+          "package": "form-data",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.0.6",
+          "firstPatchedVersion": "4.0.6",
+          "createdAt": "2026-06-17T07:26:16Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/151"
+        },
+        {
+          "number": 150,
+          "state": "open",
+          "severity": "high",
+          "package": "ws",
+          "vulnerableVersionRange": ">= 8.0.0, < 8.21.0",
+          "firstPatchedVersion": "8.21.0",
+          "createdAt": "2026-06-17T07:26:15Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/150"
+        },
+        {
+          "number": 147,
+          "state": "open",
+          "severity": "low",
+          "package": "dompurify",
+          "vulnerableVersionRange": ">= 3.0.0, <= 3.4.7",
+          "firstPatchedVersion": "3.4.8",
+          "createdAt": "2026-06-16T21:04:45Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/147"
+        },
+        {
+          "number": 146,
+          "state": "open",
+          "severity": "medium",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.0.0, <= 7.3.4",
+          "firstPatchedVersion": "7.3.5",
+          "createdAt": "2026-06-16T13:30:33Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/146"
+        },
+        {
+          "number": 145,
+          "state": "open",
+          "severity": "high",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.0.0, <= 7.3.4",
+          "firstPatchedVersion": "7.3.5",
+          "createdAt": "2026-06-16T13:08:40Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/145"
+        },
+        {
+          "number": 143,
+          "state": "open",
+          "severity": "critical",
+          "package": "vitest",
+          "vulnerableVersionRange": "< 3.2.6",
+          "firstPatchedVersion": "3.2.6",
+          "createdAt": "2026-06-08T23:53:04Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/143"
+        },
+        {
+          "number": 138,
+          "state": "open",
+          "severity": "medium",
+          "package": "qs",
+          "vulnerableVersionRange": ">= 6.11.1, <= 6.15.1",
+          "firstPatchedVersion": "6.15.2",
+          "createdAt": "2026-05-23T07:33:31Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/138"
+        },
+        {
+          "number": 137,
+          "state": "open",
+          "severity": "medium",
+          "package": "uuid",
+          "vulnerableVersionRange": "< 11.1.1",
+          "firstPatchedVersion": "11.1.1",
+          "createdAt": "2026-05-21T19:34:38Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/137"
+        },
+        {
+          "number": 136,
+          "state": "open",
+          "severity": "medium",
+          "package": "ws",
+          "vulnerableVersionRange": ">= 8.0.0, < 8.20.1",
+          "firstPatchedVersion": "8.20.1",
+          "createdAt": "2026-05-19T04:04:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/136"
+        },
+        {
+          "number": 124,
+          "state": "open",
+          "severity": "high",
+          "package": "fast-uri",
+          "vulnerableVersionRange": "<= 3.1.1",
+          "firstPatchedVersion": "3.1.2",
+          "createdAt": "2026-05-09T02:22:36Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/124"
+        },
+        {
+          "number": 123,
+          "state": "open",
+          "severity": "high",
+          "package": "fast-uri",
+          "vulnerableVersionRange": "<= 3.1.0",
+          "firstPatchedVersion": "3.1.1",
+          "createdAt": "2026-05-08T23:56:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/123"
+        },
+        {
+          "number": 121,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "< 3.4.0",
+          "firstPatchedVersion": "3.4.0",
+          "createdAt": "2026-04-22T18:27:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/121"
+        },
+        {
+          "number": 120,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": ">= 1.0.10, < 3.4.0",
+          "firstPatchedVersion": "3.4.0",
+          "createdAt": "2026-04-22T18:27:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/120"
+        },
+        {
+          "number": 119,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": ">= 3.0.1, < 3.4.0",
+          "firstPatchedVersion": "3.4.0",
+          "createdAt": "2026-04-22T18:27:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/119"
+        },
+        {
+          "number": 118,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.3.3",
+          "firstPatchedVersion": "3.4.0",
+          "createdAt": "2026-04-16T03:01:02Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/118"
+        },
+        {
+          "number": 117,
+          "state": "open",
+          "severity": "medium",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.0.0, <= 7.3.1",
+          "firstPatchedVersion": "7.3.2",
+          "createdAt": "2026-04-06T18:39:12Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/117"
+        },
+        {
+          "number": 116,
+          "state": "open",
+          "severity": "high",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.1.0, <= 7.3.1",
+          "firstPatchedVersion": "7.3.2",
+          "createdAt": "2026-04-06T18:39:12Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/116"
+        },
+        {
+          "number": 115,
+          "state": "open",
+          "severity": "high",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.0.0, <= 7.3.1",
+          "firstPatchedVersion": "7.3.2",
+          "createdAt": "2026-04-06T18:39:12Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/115"
+        },
+        {
+          "number": 114,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.3.1",
+          "firstPatchedVersion": "3.3.2",
+          "createdAt": "2026-04-03T06:59:33Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/114"
+        },
+        {
+          "number": 113,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "<= 3.3.1",
+          "firstPatchedVersion": "3.3.2",
+          "createdAt": "2026-04-03T06:59:33Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/113"
+        },
+        {
+          "number": 112,
+          "state": "open",
+          "severity": "high",
+          "package": "lodash",
+          "vulnerableVersionRange": ">= 4.0.0, <= 4.17.23",
+          "firstPatchedVersion": "4.18.0",
+          "createdAt": "2026-04-02T18:42:21Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/112"
+        },
+        {
+          "number": 111,
+          "state": "open",
+          "severity": "medium",
+          "package": "lodash",
+          "vulnerableVersionRange": "<= 4.17.23",
+          "firstPatchedVersion": "4.18.0",
+          "createdAt": "2026-04-02T18:42:21Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/111"
+        },
+        {
+          "number": 110,
+          "state": "open",
+          "severity": "medium",
+          "package": "path-to-regexp",
+          "vulnerableVersionRange": ">= 8.0.0, < 8.4.0",
+          "firstPatchedVersion": "8.4.0",
+          "createdAt": "2026-03-28T18:27:38Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/110"
+        },
+        {
+          "number": 109,
+          "state": "open",
+          "severity": "high",
+          "package": "path-to-regexp",
+          "vulnerableVersionRange": ">= 8.0.0, < 8.4.0",
+          "firstPatchedVersion": "8.4.0",
+          "createdAt": "2026-03-28T18:27:32Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/109"
+        },
+        {
+          "number": 108,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": "< 3.3.2",
+          "firstPatchedVersion": "3.3.2",
+          "createdAt": "2026-03-28T10:18:46Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/108"
+        },
+        {
+          "number": 106,
+          "state": "open",
+          "severity": "medium",
+          "package": "brace-expansion",
+          "vulnerableVersionRange": ">= 2.0.0, < 2.0.3",
+          "firstPatchedVersion": "2.0.3",
+          "createdAt": "2026-03-27T18:32:19Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/106"
+        },
+        {
+          "number": 100,
+          "state": "open",
+          "severity": "medium",
+          "package": "picomatch",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.0.4",
+          "firstPatchedVersion": "4.0.4",
+          "createdAt": "2026-03-26T07:16:06Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/100"
+        },
+        {
+          "number": 99,
+          "state": "open",
+          "severity": "high",
+          "package": "flatted",
+          "vulnerableVersionRange": "<= 3.4.1",
+          "firstPatchedVersion": "3.4.2",
+          "createdAt": "2026-03-20T11:55:36Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/99"
+        },
+        {
+          "number": 89,
+          "state": "open",
+          "severity": "high",
+          "package": "multer",
+          "vulnerableVersionRange": "< 2.1.1",
+          "firstPatchedVersion": "2.1.1",
+          "createdAt": "2026-03-05T08:22:04Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/89"
+        },
+        {
+          "number": 88,
+          "state": "open",
+          "severity": "medium",
+          "package": "dompurify",
+          "vulnerableVersionRange": ">= 3.1.3, <= 3.3.1",
+          "firstPatchedVersion": "3.3.2",
+          "createdAt": "2026-03-04T22:00:57Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/88"
+        },
+        {
+          "number": 87,
+          "state": "open",
+          "severity": "high",
+          "package": "multer",
+          "vulnerableVersionRange": "< 2.1.0",
+          "firstPatchedVersion": "2.1.0",
+          "createdAt": "2026-03-02T06:16:44Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/87"
+        },
+        {
+          "number": 86,
+          "state": "open",
+          "severity": "high",
+          "package": "multer",
+          "vulnerableVersionRange": "< 2.1.0",
+          "firstPatchedVersion": "2.1.0",
+          "createdAt": "2026-03-02T06:16:43Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/86"
+        },
+        {
+          "number": 85,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": "< 3.1.3",
+          "firstPatchedVersion": "3.1.3",
+          "createdAt": "2026-03-01T13:42:25Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/85"
+        },
+        {
+          "number": 83,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 5.0.0, < 5.1.8",
+          "firstPatchedVersion": "5.1.8",
+          "createdAt": "2026-02-28T23:19:31Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/83"
+        },
+        {
+          "number": 82,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 5.0.0, < 5.1.8",
+          "firstPatchedVersion": "5.1.8",
+          "createdAt": "2026-02-28T23:19:29Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/82"
+        },
+        {
+          "number": 81,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 9.0.0, < 9.0.7",
+          "firstPatchedVersion": "9.0.7",
+          "createdAt": "2026-02-28T21:00:35Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/81"
+        },
+        {
+          "number": 77,
+          "state": "open",
+          "severity": "high",
+          "package": "rollup",
+          "vulnerableVersionRange": ">= 4.0.0, < 4.59.0",
+          "firstPatchedVersion": "4.59.0",
+          "createdAt": "2026-02-28T17:43:35Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/77"
+        },
+        {
+          "number": 71,
+          "state": "open",
+          "severity": "high",
+          "package": "minimatch",
+          "vulnerableVersionRange": ">= 5.0.0, < 5.1.7",
+          "firstPatchedVersion": "5.1.7",
+          "createdAt": "2026-02-25T05:59:22Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/71"
+        },
+        {
+          "number": 68,
+          "state": "open",
+          "severity": "medium",
+          "package": "ajv",
+          "vulnerableVersionRange": ">= 7.0.0-alpha.0, < 8.18.0",
+          "firstPatchedVersion": "8.18.0",
+          "createdAt": "2026-02-20T22:02:44Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/68"
+        },
+        {
+          "number": 59,
+          "state": "open",
+          "severity": "low",
+          "package": "qs",
+          "vulnerableVersionRange": ">= 6.7.0, <= 6.14.1",
+          "firstPatchedVersion": "6.14.2",
+          "createdAt": "2026-02-12T23:01:07Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/59"
+        },
+        {
+          "number": 56,
+          "state": "open",
+          "severity": "medium",
+          "package": "lodash",
+          "vulnerableVersionRange": ">= 4.0.0, <= 4.17.22",
+          "firstPatchedVersion": "4.17.23",
+          "createdAt": "2026-01-22T08:51:28Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/56"
+        },
+        {
+          "number": 51,
+          "state": "open",
+          "severity": "medium",
+          "package": "qs",
+          "vulnerableVersionRange": "< 6.14.1",
+          "firstPatchedVersion": "6.14.1",
+          "createdAt": "2025-12-31T08:51:13Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/51"
+        },
+        {
+          "number": 48,
+          "state": "open",
+          "severity": "high",
+          "package": "glob",
+          "vulnerableVersionRange": ">= 10.2.0, < 10.5.0",
+          "firstPatchedVersion": "10.5.0",
+          "createdAt": "2025-11-19T07:06:25Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/48"
+        },
+        {
+          "number": 46,
+          "state": "open",
+          "severity": "medium",
+          "package": "vite",
+          "vulnerableVersionRange": ">= 7.1.0, <= 7.1.10",
+          "firstPatchedVersion": "7.1.11",
+          "createdAt": "2025-10-20T20:36:36Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/security/dependabot/46"
+        }
+      ],
+      "dependabotPRs": [
+        {
+          "number": 4641,
+          "title": "chore(deps): bump @ai-sdk/openai-compatible from 2.0.51 to 3.0.12",
+          "state": "open",
+          "createdAt": "2026-07-17T18:24:51Z",
+          "updatedAt": "2026-07-20T00:34:45Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/pull/4641",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 4639,
+          "title": "chore(deps-dev): bump @ai-sdk/provider-utils from 4.0.30 to 5.0.11",
+          "state": "open",
+          "createdAt": "2026-07-17T18:20:34Z",
+          "updatedAt": "2026-07-20T00:35:11Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/pull/4639",
+          "ciStatus": "pending",
+          "package": "unknown"
+        },
+        {
+          "number": 4635,
+          "title": "chore(deps): bump swagger-ui-dist from 5.32.8 to 5.32.9",
+          "state": "open",
+          "createdAt": "2026-07-17T18:18:04Z",
+          "updatedAt": "2026-07-17T19:56:06Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/pull/4635",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 4625,
+          "title": "chore(deps-dev): bump eslint-plugin-sonarjs from 4.0.3 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T17:54:38Z",
+          "updatedAt": "2026-07-15T17:54:42Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/pull/4625",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 4574,
+          "title": "chore(deps): bump the ai-sdk group across 1 directory with 2 updates",
+          "state": "open",
+          "createdAt": "2026-06-29T17:46:43Z",
+          "updatedAt": "2026-07-17T21:26:53Z",
+          "htmlUrl": "https://github.com/containers/podman-desktop-extension-ai-lab/pull/4574",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "js-yaml": "^5.2.1",
+        "zod": "^4.4.3",
+        "@commitlint/cli": "^21.2.1",
+        "@commitlint/config-conventional": "^21.2.0",
+        "@eslint/compat": "^2.1.0",
+        "@typescript-eslint/eslint-plugin": "^8.62.1",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^3.2.3",
+        "autoprefixer": "^10.5.4",
+        "commitlint": "^21.2.1",
+        "concurrently": "^10.0.3",
+        "eslint": "^9.39.2",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.20.0",
+        "eslint-plugin-unicorn": "^65.0.1",
+        "globals": "^17.7.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^17.0.8",
+        "msw": "^2.15.0",
+        "prettier": "^3.8.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte-check": "^4.7.3",
+        "svelte-eslint-parser": "^1.8.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.3",
+        "vitest": "^3.0.5"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@typescript-eslint/eslint-plugin",
+          "currentVersion": "8.62.1",
+          "latestVersion": "8.64.0",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "3.2.3",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-import",
+          "currentVersion": "2.31.0",
+          "latestVersion": "2.32.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "currentVersion": "3.20.0",
+          "latestVersion": "3.22.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "65.0.1",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "lint-staged",
+          "currentVersion": "17.0.8",
+          "latestVersion": "17.1.0",
+          "outdated": true
+        },
+        {
+          "package": "prettier",
+          "currentVersion": "3.8.5",
+          "latestVersion": "3.9.5",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vite",
+          "currentVersion": "8.1.3",
+          "latestVersion": "8.1.5",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "3.0.5",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 59,
+        "totalDependabotPRs": 5,
+        "coverageGap": 30,
+        "coverageGapSecurityAlerts": 19,
+        "coverageGapOutdated": 11,
+        "failingPRs": 4,
+        "totalOutdated": 13
+      },
+      "coverageGapPackages": [
+        "undici",
+        "dompurify",
+        "multer",
+        "form-data",
+        "ws",
+        "vite",
+        "vitest",
+        "qs",
+        "uuid",
+        "fast-uri",
+        "lodash",
+        "path-to-regexp",
+        "brace-expansion",
+        "picomatch",
+        "flatted",
+        "minimatch",
+        "rollup",
+        "ajv",
+        "glob"
+      ],
+      "coverageGapDetailed": [
+        {
+          "package": "undici",
+          "type": "security-alert",
+          "severity": "low"
+        },
+        {
+          "package": "dompurify",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "multer",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "form-data",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "ws",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "vite",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "vitest",
+          "type": "security-alert",
+          "severity": "critical"
+        },
+        {
+          "package": "qs",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "uuid",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "fast-uri",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "lodash",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "path-to-regexp",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "brace-expansion",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "picomatch",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "flatted",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "minimatch",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "rollup",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "ajv",
+          "type": "security-alert",
+          "severity": "medium"
+        },
+        {
+          "package": "glob",
+          "type": "security-alert",
+          "severity": "high"
+        },
+        {
+          "package": "@typescript-eslint/eslint-plugin",
+          "type": "outdated",
+          "currentVersion": "8.62.1",
+          "latestVersion": "8.64.0",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "3.2.3",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-import",
+          "type": "outdated",
+          "currentVersion": "2.31.0",
+          "latestVersion": "2.32.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "type": "outdated",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "type": "outdated",
+          "currentVersion": "3.20.0",
+          "latestVersion": "3.22.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "65.0.1",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "lint-staged",
+          "type": "outdated",
+          "currentVersion": "17.0.8",
+          "latestVersion": "17.1.0",
+          "severity": "none"
+        },
+        {
+          "package": "prettier",
+          "type": "outdated",
+          "currentVersion": "3.8.5",
+          "latestVersion": "3.9.5",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-redhat-account-ext",
+      "fullName": "redhat-developer/podman-desktop-redhat-account-ext",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 1236,
+          "title": "bump eslint-plugin-simple-import-sort from 13.0.0 to 14.0.0",
+          "state": "open",
+          "createdAt": "2026-07-16T23:34:10Z",
+          "updatedAt": "2026-07-16T23:34:10Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-account-ext/pull/1236",
+          "ciStatus": "passing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@podman-desktop/api": "1.27.0-next.202604210820-677f704",
+        "@podman-desktop/podman-extension-api": "1.28.2",
+        "js-yaml": "^5.2.1",
+        "object-hash": "3.0.0",
+        "openapi-fetch": "^0.17.0",
+        "openid-client": "^6.8.4",
+        "7zip-min": "^3.0.1",
+        "@playwright/test": "^1.61.1",
+        "@podman-desktop/tests-playwright": "^1.28.2",
+        "@types/js-yaml": "^4.0.5",
+        "@types/node": "^24",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "byline": "^5.0.0",
+        "copyfiles": "^2.4.1",
+        "cross-env": "^10.1.0",
+        "eslint": "^8.57.1",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-header": "^3.1.1",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^13.0.0",
+        "eslint-plugin-sonarjs": "^4.2.0",
+        "eslint-plugin-unicorn": "^56.0.1",
+        "mkdirp": "^3.0.1",
+        "prettier": "^3.9.5",
+        "tslib": "^2.8.1",
+        "typescript": "^5.9.3",
+        "vite": "^8.1.5",
+        "vitest": "^4.1.10",
+        "xvfb-maybe": "^0.2.1",
+        "adm-zip": "^0.6.0"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@podman-desktop/api",
+          "currentVersion": "1.27.0-next.202604210820-677f704",
+          "latestVersion": "1.28.2",
+          "outdated": true
+        },
+        {
+          "package": "@types/js-yaml",
+          "currentVersion": "4.0.5",
+          "latestVersion": "4.0.9",
+          "outdated": true
+        },
+        {
+          "package": "@types/node",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "currentVersion": "6.21.0",
+          "latestVersion": "8.64.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "8.57.1",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "56.0.1",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 1,
+        "coverageGap": 8,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 8,
+        "failingPRs": 0,
+        "totalOutdated": 8
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "@podman-desktop/api",
+          "type": "outdated",
+          "currentVersion": "1.27.0-next.202604210820-677f704",
+          "latestVersion": "1.28.2",
+          "severity": "none"
+        },
+        {
+          "package": "@types/js-yaml",
+          "type": "outdated",
+          "currentVersion": "4.0.5",
+          "latestVersion": "4.0.9",
+          "severity": "none"
+        },
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "type": "outdated",
+          "currentVersion": "6.21.0",
+          "latestVersion": "8.64.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "8.57.1",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-simple-import-sort",
+          "type": "outdated",
+          "currentVersion": "13.0.0",
+          "latestVersion": "14.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "56.0.1",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-sandbox-ext",
+      "fullName": "redhat-developer/podman-desktop-sandbox-ext",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {
+        "@kubernetes/client-node": "^1.4.0",
+        "@podman-desktop/api": "^1.28.2",
+        "fs-extra": "^11.3.6",
+        "got": "^15.1.0",
+        "@playwright/test": "1.61.1",
+        "@podman-desktop/tests-playwright": "^1.28.2",
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^24",
+        "@vitest/coverage-v8": "^4.1.8",
+        "byline": "^5.0.0",
+        "copyfiles": "^2.4.1",
+        "cross-env": "10.1.0",
+        "jsdom": "^29.1.1",
+        "mkdirp": "^3.0.1",
+        "prettier": "^3.9.5",
+        "typescript": "^7.0.2",
+        "vite": "^8.1.5",
+        "vitest": "^4.1.8",
+        "vscode-uri": "^3.1.0",
+        "xvfb-maybe": "^0.2.1",
+        "js-yaml": "^5.2.1",
+        "adm-zip": "^0.6.0"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@types/node",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "4.1.8",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4.1.8",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 3,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 3,
+        "failingPRs": 0,
+        "totalOutdated": 3
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "4.1.8",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "4.1.8",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-redhat-lightspeed-ext",
+      "fullName": "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 643,
+          "title": "chore(deps): bump inversify from 7.11.0 to 8.2.1",
+          "state": "open",
+          "createdAt": "2026-07-17T16:05:04Z",
+          "updatedAt": "2026-07-17T16:05:10Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-lightspeed-ext/pull/643",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 477,
+          "title": "chore(deps): bump pnpm/action-setup from 5 to 6",
+          "state": "open",
+          "createdAt": "2026-04-13T17:21:20Z",
+          "updatedAt": "2026-06-23T07:02:34Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-redhat-lightspeed-ext/pull/477",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@eslint/compat": "^2.0.4",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.30.1",
+        "@vitest/coverage-v8": "^4.1.10",
+        "@vitest/eslint-plugin": "^1.6.20",
+        "autoprefixer": "^10.5.3",
+        "concurrently": "^10.0.0",
+        "eslint": "^9.39.5",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.3.4",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^3.0.2",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^14.0.0",
+        "eslint-plugin-sonarjs": "^4.1.0",
+        "eslint-plugin-svelte": "^3.18.0",
+        "eslint-plugin-unicorn": "^65.0.0",
+        "node-gyp": "^13.0.1",
+        "prettier": "^3.9.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte": "5.56.6",
+        "svelte-check": "^4.4.7",
+        "svelte-eslint-parser": "^1.8.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.30.1",
+        "vite": "^8.1.4",
+        "vitest": "^3.1.2"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@eslint/compat",
+          "currentVersion": "2.0.4",
+          "latestVersion": "2.1.0",
+          "outdated": true
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "currentVersion": "8.30.1",
+          "latestVersion": "8.64.0",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/eslint-plugin",
+          "currentVersion": "1.6.20",
+          "latestVersion": "1.6.23",
+          "outdated": true
+        },
+        {
+          "package": "autoprefixer",
+          "currentVersion": "10.5.3",
+          "latestVersion": "10.5.4",
+          "outdated": true
+        },
+        {
+          "package": "concurrently",
+          "currentVersion": "10.0.0",
+          "latestVersion": "10.0.3",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "9.39.5",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-import-resolver-typescript",
+          "currentVersion": "4.3.4",
+          "latestVersion": "4.4.5",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "currentVersion": "3.0.2",
+          "latestVersion": "4.0.0-beta.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-import",
+          "currentVersion": "2.31.0",
+          "latestVersion": "2.32.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "currentVersion": "3.18.0",
+          "latestVersion": "3.22.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "65.0.0",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "svelte-check",
+          "currentVersion": "4.4.7",
+          "latestVersion": "4.7.3",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "typescript-eslint",
+          "currentVersion": "8.30.1",
+          "latestVersion": "8.64.0",
+          "outdated": true
+        },
+        {
+          "package": "vite",
+          "currentVersion": "8.1.4",
+          "latestVersion": "8.1.5",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "3.1.2",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 2,
+        "coverageGap": 17,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 17,
+        "failingPRs": 2,
+        "totalOutdated": 17
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "@eslint/compat",
+          "type": "outdated",
+          "currentVersion": "2.0.4",
+          "latestVersion": "2.1.0",
+          "severity": "none"
+        },
+        {
+          "package": "@typescript-eslint/parser",
+          "type": "outdated",
+          "currentVersion": "8.30.1",
+          "latestVersion": "8.64.0",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/eslint-plugin",
+          "type": "outdated",
+          "currentVersion": "1.6.20",
+          "latestVersion": "1.6.23",
+          "severity": "none"
+        },
+        {
+          "package": "autoprefixer",
+          "type": "outdated",
+          "currentVersion": "10.5.3",
+          "latestVersion": "10.5.4",
+          "severity": "none"
+        },
+        {
+          "package": "concurrently",
+          "type": "outdated",
+          "currentVersion": "10.0.0",
+          "latestVersion": "10.0.3",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "9.39.5",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-import-resolver-typescript",
+          "type": "outdated",
+          "currentVersion": "4.3.4",
+          "latestVersion": "4.4.5",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "type": "outdated",
+          "currentVersion": "3.0.2",
+          "latestVersion": "4.0.0-beta.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-import",
+          "type": "outdated",
+          "currentVersion": "2.31.0",
+          "latestVersion": "2.32.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.1.0",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "type": "outdated",
+          "currentVersion": "3.18.0",
+          "latestVersion": "3.22.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "65.0.0",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "svelte-check",
+          "type": "outdated",
+          "currentVersion": "4.4.7",
+          "latestVersion": "4.7.3",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "typescript-eslint",
+          "type": "outdated",
+          "currentVersion": "8.30.1",
+          "latestVersion": "8.64.0",
+          "severity": "none"
+        },
+        {
+          "package": "vite",
+          "type": "outdated",
+          "currentVersion": "8.1.4",
+          "latestVersion": "8.1.5",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "3.1.2",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-rhel-ext",
+      "fullName": "redhat-developer/podman-desktop-rhel-ext",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 625,
+          "title": "chore(deps-dev): bump the eslint group across 1 directory with 2 updates",
+          "state": "open",
+          "createdAt": "2026-07-13T15:54:37Z",
+          "updatedAt": "2026-07-17T20:29:05Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-rhel-ext/pull/625",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 590,
+          "title": "chore(deps-dev): bump eslint-plugin-sonarjs from 4.0.3 to 4.1.0",
+          "state": "open",
+          "createdAt": "2026-06-19T15:54:04Z",
+          "updatedAt": "2026-07-14T15:55:10Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-rhel-ext/pull/590",
+          "ciStatus": "pending",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@crc-org/macadam.js": "0.8.0",
+        "@podman-desktop/api": "1.28.2",
+        "compare-versions": "^6.1.1",
+        "openapi-fetch": "^0.17.0",
+        "semver": "^7.8.5",
+        "ssh2": "^1.17.0",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/eslintrc": "^3.3.5",
+        "@eslint/js": "^10.0.1",
+        "@types/node": "^24",
+        "@types/ssh2": "^1.15.5",
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4",
+        "eslint": "^10.6.0",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-file-progress": "^4.0.0",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^14.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-unicorn": "^72.0.0",
+        "globals": "^17.7.0",
+        "memfs": "^4.64.0",
+        "openapi-typescript": "^7.13.0",
+        "prettier": "^3.9.5",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.5",
+        "vitest": "^4"
+      },
+      "outdatedPackages": [
+        {
+          "package": "@eslint/eslintrc",
+          "currentVersion": "3.3.5",
+          "latestVersion": "3.3.6",
+          "outdated": true
+        },
+        {
+          "package": "@types/node",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "outdated": true
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        },
+        {
+          "package": "eslint",
+          "currentVersion": "10.6.0",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        },
+        {
+          "package": "vitest",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 2,
+        "coverageGap": 8,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 8,
+        "failingPRs": 1,
+        "totalOutdated": 8
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "@eslint/eslintrc",
+          "type": "outdated",
+          "currentVersion": "3.3.5",
+          "latestVersion": "3.3.6",
+          "severity": "none"
+        },
+        {
+          "package": "@types/node",
+          "type": "outdated",
+          "currentVersion": "24",
+          "latestVersion": "26.1.1",
+          "severity": "none"
+        },
+        {
+          "package": "@vitest/coverage-v8",
+          "type": "outdated",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        },
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "10.6.0",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-file-progress",
+          "type": "outdated",
+          "currentVersion": "4.0.0",
+          "latestVersion": "4.0.0-beta.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        },
+        {
+          "package": "vitest",
+          "type": "outdated",
+          "currentVersion": "4",
+          "latestVersion": "4.1.10",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-hummingbird-ext",
+      "fullName": "redhat-developer/podman-desktop-hummingbird-ext",
+      "alerts": [],
+      "dependabotPRs": [
+        {
+          "number": 551,
+          "title": "build(deps): bump inversify from 7.11.0 to 8.2.1",
+          "state": "open",
+          "createdAt": "2026-07-17T02:09:29Z",
+          "updatedAt": "2026-07-17T02:09:34Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-hummingbird-ext/pull/551",
+          "ciStatus": "failing",
+          "package": "unknown"
+        },
+        {
+          "number": 539,
+          "title": "build(deps-dev): bump eslint-plugin-sonarjs from 4.0.3 to 4.2.0",
+          "state": "open",
+          "createdAt": "2026-07-15T02:08:33Z",
+          "updatedAt": "2026-07-20T02:40:56Z",
+          "htmlUrl": "https://github.com/redhat-developer/podman-desktop-hummingbird-ext/pull/539",
+          "ciStatus": "failing",
+          "package": "unknown"
+        }
+      ],
+      "dependencies": {
+        "@typescript-eslint/eslint-plugin": "^8.64.0",
+        "@typescript-eslint/parser": "^8.64.0",
+        "@vitest/coverage-v8": "^4.1.10",
+        "@vitest/eslint-plugin": "^1.6.23",
+        "autoprefixer": "^10.5.4",
+        "concurrently": "^10.0.3",
+        "eslint": "^9.39.2",
+        "@eslint/compat": "^2.1.0",
+        "@eslint/js": "^9.39.5",
+        "@eslint/eslintrc": "^3.3.6",
+        "eslint-import-resolver-custom-alias": "^1.3.2",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-etc": "^2.0.3",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-no-null": "^1.0.2",
+        "eslint-plugin-redundant-undefined": "^1.0.0",
+        "eslint-plugin-simple-import-sort": "^14.0.0",
+        "eslint-plugin-sonarjs": "^4.0.3",
+        "eslint-plugin-svelte": "^3.21.0",
+        "eslint-plugin-unicorn": "^65.0.1",
+        "prettier": "^3.9.5",
+        "prettier-plugin-svelte": "^4.1.1",
+        "svelte-eslint-parser": "^1.8.0",
+        "typescript": "5.9.3",
+        "typescript-eslint": "^8.64.0",
+        "vite": "^8.1.5",
+        "vitest": "^4.1.10",
+        "globals": "^17.7.0",
+        "@podman-desktop/api": "^1.28.2"
+      },
+      "outdatedPackages": [
+        {
+          "package": "eslint",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.7.0",
+          "outdated": true
+        },
+        {
+          "package": "@eslint/js",
+          "currentVersion": "9.39.5",
+          "latestVersion": "10.0.1",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "outdated": true
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "currentVersion": "65.0.1",
+          "latestVersion": "72.0.0",
+          "outdated": true
+        },
+        {
+          "package": "typescript",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "outdated": true
+        }
+      ],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 2,
+        "coverageGap": 6,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 6,
+        "failingPRs": 2,
+        "totalOutdated": 6
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": [
+        {
+          "package": "eslint",
+          "type": "outdated",
+          "currentVersion": "9.39.2",
+          "latestVersion": "10.7.0",
+          "severity": "none"
+        },
+        {
+          "package": "@eslint/js",
+          "type": "outdated",
+          "currentVersion": "9.39.5",
+          "latestVersion": "10.0.1",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-sonarjs",
+          "type": "outdated",
+          "currentVersion": "4.0.3",
+          "latestVersion": "4.2.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-svelte",
+          "type": "outdated",
+          "currentVersion": "3.21.0",
+          "latestVersion": "3.22.0",
+          "severity": "none"
+        },
+        {
+          "package": "eslint-plugin-unicorn",
+          "type": "outdated",
+          "currentVersion": "65.0.1",
+          "latestVersion": "72.0.0",
+          "severity": "none"
+        },
+        {
+          "package": "typescript",
+          "type": "outdated",
+          "currentVersion": "5.9.3",
+          "latestVersion": "7.0.2",
+          "severity": "none"
+        }
+      ]
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-redhat-pack-ext",
+      "fullName": "redhat-developer/podman-desktop-redhat-pack-ext",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "outdatedPackages": [],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 0,
+        "failingPRs": 0,
+        "totalOutdated": 0
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": []
+    },
+    {
+      "owner": "redhat-developer",
+      "repo": "podman-desktop-image-checker-openshift-ext",
+      "fullName": "redhat-developer/podman-desktop-image-checker-openshift-ext",
+      "alerts": [],
+      "dependabotPRs": [],
+      "dependencies": {},
+      "outdatedPackages": [],
+      "stats": {
+        "totalAlerts": 0,
+        "totalDependabotPRs": 0,
+        "coverageGap": 0,
+        "coverageGapSecurityAlerts": 0,
+        "coverageGapOutdated": 0,
+        "failingPRs": 0,
+        "totalOutdated": 0
+      },
+      "coverageGapPackages": [],
+      "coverageGapDetailed": []
+    }
+  ],
+  "sharedDependencies": [
+    {
+      "package": "typescript",
+      "repoCount": 20,
+      "versions": [
+        "5.9.3",
+        "^5.9.3",
+        "^6.0.3",
+        "^7.0.2",
+        "^5.4.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "podman-desktop/eslint-plugin",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "vite",
+      "repoCount": 20,
+      "versions": [
+        "8.1.5",
+        "^8.1.5",
+        "^8.1.4",
+        "^8.0.16",
+        "^8.0.0",
+        "^8.1.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "podman-desktop/eslint-plugin",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "vitest",
+      "repoCount": 20,
+      "versions": [
+        "^4.1.10",
+        "^4",
+        "^4.1.8",
+        "^2.1.9",
+        "^4.1.9",
+        "^3.2.4",
+        "^4.1.0",
+        "^4.0.18",
+        "^3.0.5",
+        "^3.1.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "podman-desktop/eslint-plugin",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@vitest/coverage-v8",
+      "repoCount": 19,
+      "versions": [
+        "^4.0.10",
+        "^4",
+        "^4.1.8",
+        "^4.1.10",
+        "^2.0.5",
+        "^4.1.9",
+        "^3.2.4",
+        "^3.2.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint",
+      "repoCount": 19,
+      "versions": [
+        "^9.39.2",
+        "^8.56.0",
+        "^10.7.0",
+        "^8.57.1",
+        "^10.0.0",
+        "^9.39.5",
+        "^10.6.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "podman-desktop/eslint-plugin",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-import-resolver-custom-alias",
+      "repoCount": 18,
+      "versions": [
+        "^1.3.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-import-resolver-typescript",
+      "repoCount": 18,
+      "versions": [
+        "^4.4.5",
+        "^4.3.4"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-import",
+      "repoCount": 18,
+      "versions": [
+        "^2.32.0",
+        "^2.31.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-redundant-undefined",
+      "repoCount": 18,
+      "versions": [
+        "^1.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-sonarjs",
+      "repoCount": 18,
+      "versions": [
+        "^4.0.3",
+        "^4.1.0",
+        "^4.2.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-etc",
+      "repoCount": 17,
+      "versions": [
+        "^2.0.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-no-null",
+      "repoCount": 17,
+      "versions": [
+        "^1.0.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@typescript-eslint/eslint-plugin",
+      "repoCount": 16,
+      "versions": [
+        "^8.64.0",
+        "^8.62.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@typescript-eslint/parser",
+      "repoCount": 16,
+      "versions": [
+        "^8.64.0",
+        "^8.0.1",
+        "^6.19.1",
+        "^6.21.0",
+        "^8.30.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "prettier",
+      "repoCount": 16,
+      "versions": [
+        "^3.9.5",
+        "^3.8.4",
+        "^3.8.5"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-layers-explorer",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-simple-import-sort",
+      "repoCount": 15,
+      "versions": [
+        "^14.0.0",
+        "^12.1.1",
+        "^13.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-unicorn",
+      "repoCount": 15,
+      "versions": [
+        "^65.0.1",
+        "^70.0.0",
+        "^71.1.0",
+        "^72.0.0",
+        "^69.0.0",
+        "^56.0.1",
+        "^65.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "typescript-eslint",
+      "repoCount": 15,
+      "versions": [
+        "^8.64.0",
+        "^8.55.0",
+        "^8.30.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "podman-desktop/eslint-plugin",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@eslint/compat",
+      "repoCount": 14,
+      "versions": [
+        "^2.0.2",
+        "^2.1.0",
+        "^2.0.4"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@eslint/eslintrc",
+      "repoCount": 11,
+      "versions": [
+        "^3.3.3",
+        "^3.3.6",
+        "^3.3.5"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@eslint/js",
+      "repoCount": 11,
+      "versions": [
+        "^9.39.2",
+        "^10.0.1",
+        "^9.39.5"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@podman-desktop/api",
+      "repoCount": 11,
+      "versions": [
+        "1.28.2",
+        "workspace:",
+        "^1.28.2",
+        "1.27.0-next.202604210820-677f704"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-layers-explorer",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "concurrently",
+      "repoCount": 10,
+      "versions": [
+        "^10.0.3",
+        "^10.0.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "prettier-plugin-svelte",
+      "repoCount": 10,
+      "versions": [
+        "^4.1.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "globals",
+      "repoCount": 10,
+      "versions": [
+        "^17.7.0",
+        "^17.6.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-podman-quadlet",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "autoprefixer",
+      "repoCount": 9,
+      "versions": [
+        "^10.5.4",
+        "^10.5.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "@types/node",
+      "repoCount": 9,
+      "versions": [
+        "^25.2.3",
+        "^24",
+        "^24.13.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-layers-explorer",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "podman-desktop/eslint-plugin",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-svelte",
+      "repoCount": 8,
+      "versions": [
+        "^3.21.0",
+        "^3.20.0",
+        "^3.18.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "svelte-eslint-parser",
+      "repoCount": 8,
+      "versions": [
+        "^1.8.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "eslint-plugin-file-progress",
+      "repoCount": 8,
+      "versions": [
+        "^4.0.0",
+        "^3.0.2"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-github",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "@vitest/eslint-plugin",
+      "repoCount": 8,
+      "versions": [
+        "^1.6.23",
+        "^1.6.20"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-grype",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-hummingbird-ext",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "svelte-check",
+      "repoCount": 7,
+      "versions": [
+        "^4.7.3",
+        "^4.4.7"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "containers/podman-desktop-extension-ai-lab",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "js-yaml",
+      "repoCount": 6,
+      "versions": [
+        "^4.2.0",
+        "^4.3.0",
+        "^5.2.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-postgresql",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "@biomejs/biome",
+      "repoCount": 6,
+      "versions": [
+        "^2.5.4",
+        "^2.5.3",
+        "^2.3.15"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/extension-github",
+        "podman-desktop/eslint-plugin"
+      ]
+    },
+    {
+      "package": "husky",
+      "repoCount": 5,
+      "versions": [
+        "^9.1.7"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/eslint-plugin",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "lint-staged",
+      "repoCount": 5,
+      "versions": [
+        "^17.1.0",
+        "^17.0.8"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "podman-desktop/eslint-plugin",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "svelte",
+      "repoCount": 5,
+      "versions": [
+        "5.56.6"
+      ],
+      "repos": [
+        "podman-desktop/extension-podman-quadlet",
+        "podman-desktop/extension-postgresql",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "@commitlint/cli",
+      "repoCount": 4,
+      "versions": [
+        "^21.2.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "@commitlint/config-conventional",
+      "repoCount": 4,
+      "versions": [
+        "^21.2.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-apple-container",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "adm-zip",
+      "repoCount": 4,
+      "versions": [
+        "^0.6.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-apple-container",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "mkdirp",
+      "repoCount": 4,
+      "versions": [
+        "^3.0.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-minikube",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "commitlint",
+      "repoCount": 3,
+      "versions": [
+        "^21.2.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-bootc",
+        "podman-desktop/extension-apple-container",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "@kubernetes/client-node",
+      "repoCount": 3,
+      "versions": [
+        "1.4.0",
+        "^1.4.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "podman-desktop/extension-kind",
+        "redhat-developer/podman-desktop-sandbox-ext"
+      ]
+    },
+    {
+      "package": "@octokit/rest",
+      "repoCount": 3,
+      "versions": [
+        "^22.0.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-github"
+      ]
+    },
+    {
+      "package": "isomorphic-ws",
+      "repoCount": 3,
+      "versions": [
+        "5.0.0",
+        "^5.0.0"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard"
+      ]
+    },
+    {
+      "package": "@playwright/test",
+      "repoCount": 3,
+      "versions": [
+        "1.61.1",
+        "^1.61.1"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "@tsconfig/strictest",
+      "repoCount": 3,
+      "versions": [
+        "^2.0.8",
+        "^2.0.6"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard"
+      ]
+    },
+    {
+      "package": "cross-env",
+      "repoCount": 3,
+      "versions": [
+        "10.1.0",
+        "^10.1.0"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "xvfb-maybe",
+      "repoCount": 3,
+      "versions": [
+        "^0.2.1"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "node-gyp",
+      "repoCount": 3,
+      "versions": [
+        "^13.0.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard",
+        "redhat-developer/podman-desktop-redhat-lightspeed-ext"
+      ]
+    },
+    {
+      "package": "zod",
+      "repoCount": 2,
+      "versions": [
+        "^4.4.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kreate",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "mustache",
+      "repoCount": 2,
+      "versions": [
+        "^4.2.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/podman-desktop"
+      ]
+    },
+    {
+      "package": "tmp-promise",
+      "repoCount": 2,
+      "versions": [
+        "^3.0.3"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-minikube"
+      ]
+    },
+    {
+      "package": "tsx",
+      "repoCount": 2,
+      "versions": [
+        "^4.23.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-kind",
+        "podman-desktop/extension-apple-container"
+      ]
+    },
+    {
+      "package": "ssh2",
+      "repoCount": 2,
+      "versions": [
+        "1.17.0",
+        "^1.17.0"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    },
+    {
+      "package": "msw",
+      "repoCount": 2,
+      "versions": [
+        "^2.15.0"
+      ],
+      "repos": [
+        "podman-desktop/podman-desktop",
+        "containers/podman-desktop-extension-ai-lab"
+      ]
+    },
+    {
+      "package": "7zip-min",
+      "repoCount": 2,
+      "versions": [
+        "^3.0.1"
+      ],
+      "repos": [
+        "podman-desktop/extension-minikube",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "validator",
+      "repoCount": 2,
+      "versions": [
+        "^13.15.35"
+      ],
+      "repos": [
+        "podman-desktop/extension-minikube",
+        "podman-desktop/extension-layers-explorer"
+      ]
+    },
+    {
+      "package": "eslint-plugin-better-tailwindcss",
+      "repoCount": 2,
+      "versions": [
+        "^4.7.0"
+      ],
+      "repos": [
+        "podman-desktop/extension-kubernetes-contexts",
+        "podman-desktop/extension-kubernetes-dashboard"
+      ]
+    },
+    {
+      "package": "@podman-desktop/tests-playwright",
+      "repoCount": 2,
+      "versions": [
+        "^1.28.2"
+      ],
+      "repos": [
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "byline",
+      "repoCount": 2,
+      "versions": [
+        "^5.0.0"
+      ],
+      "repos": [
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "copyfiles",
+      "repoCount": 2,
+      "versions": [
+        "^2.4.1"
+      ],
+      "repos": [
+        "redhat-developer/podman-desktop-sandbox-ext",
+        "redhat-developer/podman-desktop-redhat-account-ext"
+      ]
+    },
+    {
+      "package": "openapi-fetch",
+      "repoCount": 2,
+      "versions": [
+        "^0.17.0"
+      ],
+      "repos": [
+        "redhat-developer/podman-desktop-redhat-account-ext",
+        "redhat-developer/podman-desktop-rhel-ext"
+      ]
+    }
+  ]
+}

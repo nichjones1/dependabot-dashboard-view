@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dependabot Dashboard - Podman Desktop Ecosystem</title>
+    <style>
+        :root {
+            --bg-primary: #f5f5f5;
+            --bg-secondary: #ffffff;
+            --text-primary: #333;
+            --text-secondary: #666;
+            --text-tertiary: #555;
+            --border-color: #e9ecef;
+            --border-light: #ddd;
+            --shadow: rgba(0,0,0,0.1);
+            --shadow-hover: rgba(0,0,0,0.15);
+            --card-bg: #ffffff;
+            --header-gradient-start: #667eea;
+            --header-gradient-end: #764ba2;
+        }
+
+        body.dark-mode {
+            --bg-primary: #1a1a1a;
+            --bg-secondary: #2d2d2d;
+            --text-primary: #e0e0e0;
+            --text-secondary: #b0b0b0;
+            --text-tertiary: #888;
+            --border-color: #404040;
+            --border-light: #505050;
+            --shadow: rgba(0,0,0,0.3);
+            --shadow-hover: rgba(0,0,0,0.5);
+            --card-bg: #2d2d2d;
+            --header-gradient-start: #4a5fd8;
+            --header-gradient-end: #5a3a82;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--header-gradient-start) 0%, var(--header-gradient-end) 100%);
+            color: white;
+            padding: 30px 20px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px var(--shadow);
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.05);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow);
+            transition: transform 0.2s, box-shadow 0.3s, background-color 0.3s;
+            text-align: center;
+            min-height: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px var(--shadow-hover);
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+            line-height: 1;
+        }
+
+        body.dark-mode .stat-value {
+            color: #8b9bff;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-size: 0.8em;
+            margin-top: 8px;
+            line-height: 1.2;
+        }
+
+        .filters {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px var(--shadow);
+            transition: background-color 0.3s;
+        }
+
+        .filter-group {
+            display: grid;
+            grid-template-columns: auto 2fr repeat(4, auto 1fr);
+            gap: 10px;
+            align-items: center;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            font-size: 0.85em;
+            color: var(--text-tertiary);
+            white-space: nowrap;
+        }
+
+        .filter-group input,
+        .filter-group select {
+            padding: 6px 10px;
+            border: 1px solid var(--border-light);
+            border-radius: 4px;
+            font-size: 13px;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            transition: border-color 0.2s, background-color 0.3s, color 0.3s;
+        }
+
+        .filter-group input:focus,
+        .filter-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        body.dark-mode .filter-group input:focus,
+        body.dark-mode .filter-group select:focus {
+            border-color: #8b9bff;
+        }
+
+        .filter-group input[type="text"] {
+            width: 100%;
+            min-width: 200px;
+        }
+
+        .filter-group select {
+            min-width: 140px;
+        }
+
+        @media (max-width: 1200px) {
+            .filter-group {
+                grid-template-columns: auto 1fr;
+                gap: 8px;
+            }
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: var(--card-bg);
+            border: none;
+            border-radius: 8px 8px 0 0;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text-primary);
+            transition: all 0.2s;
+        }
+
+        .tab.active {
+            background: #667eea;
+            color: white;
+        }
+
+        body.dark-mode .tab.active {
+            background: #5a7fd8;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px var(--shadow);
+            border-collapse: collapse;
+            transition: background-color 0.3s;
+        }
+
+        thead {
+            background: var(--bg-primary);
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-primary);
+            border-bottom: 2px solid var(--border-color);
+            cursor: pointer;
+            user-select: none;
+            transition: background-color 0.2s;
+        }
+
+        th:hover {
+            background: var(--border-color);
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+            transition: color 0.3s;
+        }
+
+        tr:hover {
+            background: var(--bg-primary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .severity-critical { background: #dc3545; color: white; }
+        .severity-high { background: #fd7e14; color: white; }
+        .severity-medium { background: #ffc107; color: #333; }
+        .severity-low { background: #28a745; color: white; }
+        .severity-unknown { background: #6c757d; color: white; }
+
+        .ci-passing { background: #28a745; color: white; }
+        .ci-failing { background: #dc3545; color: white; }
+        .ci-pending { background: #ffc107; color: #333; }
+        .ci-unknown { background: #6c757d; color: white; }
+
+        .age-fresh { color: #28a745; font-weight: 600; }
+        .age-moderate { color: #ffc107; font-weight: 600; }
+        .age-old { color: #fd7e14; font-weight: 600; }
+        .age-stale { color: #dc3545; font-weight: 600; }
+
+        /* Coverage Gap Summary */
+        .coverage-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+            padding: 16px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .summary-stat {
+            text-align: center;
+            padding: 12px;
+        }
+
+        .summary-value {
+            display: block;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--primary);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .summary-label {
+            display: block;
+            font-size: 0.9em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+
+        /* Coverage Gap Filters */
+        .coverage-filters {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            align-items: center;
+        }
+
+        .coverage-filters label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .coverage-filters label:hover {
+            background: var(--body-bg);
+        }
+
+        .coverage-filters input[type="radio"] {
+            cursor: pointer;
+        }
+
+        /* Flat Coverage Table */
+        .flat-coverage-table .col-type { width: 15%; }
+        .flat-coverage-table .col-severity { width: 12%; }
+        .flat-coverage-table .col-package { width: 30%; }
+        .flat-coverage-table .col-version { width: 20%; }
+        .flat-coverage-table .col-repo { width: 23%; }
+
+        /* Remove old nested table styles - now using flat table */
+
+        /* Type badges */
+        .type-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .security-type {
+            background: #fee;
+            color: #dc3545;
+            border: 1px solid #fcc;
+        }
+
+        .outdated-type {
+            background: #e7f3ff;
+            color: #0066cc;
+            border: 1px solid #b3d9ff;
+        }
+
+        .dark-mode .security-type {
+            background: #3d1a1a;
+            color: #ff6b6b;
+            border-color: #5d2a2a;
+        }
+
+        .dark-mode .outdated-type {
+            background: #1a2d3d;
+            color: #6bb6ff;
+            border-color: #2a4d6d;
+        }
+
+        /* Row styling */
+        .security-row {
+            border-left: 3px solid #dc3545;
+        }
+
+        .outdated-row {
+            border-left: 3px solid #0066cc;
+        }
+
+        .package-name {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            background: var(--card-bg);
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: var(--primary);
+            border: 1px solid var(--border);
+        }
+
+        /* Version display */
+        .version-cell {
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 0.85em;
+            white-space: nowrap;
+        }
+
+        .version-current {
+            color: var(--text-muted);
+        }
+
+        .version-arrow {
+            color: var(--primary);
+            font-weight: bold;
+            padding: 0 6px;
+        }
+
+        .version-latest {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-muted {
+            color: var(--text-muted);
+            opacity: 0.5;
+        }
+
+        /* Shared Dependencies Styling */
+        .shared-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+            padding: 16px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .shared-filters {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 20px;
+            padding: 12px 16px;
+            background: var(--card-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            align-items: center;
+        }
+
+        .shared-filters label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+
+        .shared-filters label:hover {
+            background: var(--body-bg);
+        }
+
+        .flat-shared-table .col-status { width: 14%; }
+        .flat-shared-table .col-package { width: 20%; }
+        .flat-shared-table .col-repos { width: 10%; }
+        .flat-shared-table .col-versions { width: 12%; }
+        .flat-shared-table .col-version-list { width: 32%; }
+        .flat-shared-table .col-actions { width: 12%; }
+
+        /* Status badges */
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .consistent-badge {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .inconsistent-badge {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        .dark-mode .consistent-badge {
+            background: #1a3d2a;
+            color: #66ff99;
+            border-color: #2a5d3a;
+        }
+
+        .dark-mode .inconsistent-badge {
+            background: #3d3d1a;
+            color: #ffeb66;
+            border-color: #5d5d2a;
+        }
+
+        /* Row styling */
+        .consistent-row {
+            border-left: 3px solid #28a745;
+        }
+
+        .inconsistent-row {
+            border-left: 3px solid #ffc107;
+        }
+
+        /* Version count badge */
+        .version-count-badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .version-count-badge.consistent {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .version-count-badge.inconsistent {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .dark-mode .version-count-badge.consistent {
+            background: #1a3d2a;
+            color: #66ff99;
+        }
+
+        .dark-mode .version-count-badge.inconsistent {
+            background: #3d3d1a;
+            color: #ffeb66;
+        }
+
+        /* Version tags */
+        .version-list-cell {
+            line-height: 2;
+        }
+
+        .version-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            margin: 2px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 3px;
+            font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
+            font-size: 0.85em;
+            color: var(--primary);
+        }
+
+        /* Expand button */
+        .expand-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85em;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .expand-btn:hover {
+            background: #5563d1;
+            transform: translateY(-1px);
+        }
+
+        .expand-icon {
+            font-size: 0.7em;
+            transition: transform 0.3s;
+        }
+
+        /* Detail row */
+        .detail-row {
+            background: var(--body-bg);
+        }
+
+        .detail-content {
+            padding: 20px;
+            border-top: 2px solid var(--border);
+        }
+
+        .detail-content h4 {
+            margin: 0 0 12px 0;
+            color: var(--text-primary);
+            font-size: 1em;
+        }
+
+        .repo-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .repo-chip {
+            display: inline-block;
+            padding: 6px 12px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.85em;
+            transition: all 0.2s;
+        }
+
+        .repo-chip:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        body.dark-mode a {
+            color: #8b9bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .repo-link {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-secondary);
+        }
+
+        .empty-state-icon {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .shared-dep-card {
+            background: var(--card-bg);
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow);
+            transition: background-color 0.3s;
+        }
+
+        .shared-dep-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .package-name {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: var(--text-primary);
+        }
+
+        .repo-count {
+            background: #667eea;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.9em;
+        }
+
+        .version-list {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .version-badge {
+            background: var(--bg-primary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-family: monospace;
+            color: var(--text-primary);
+            transition: background-color 0.3s;
+        }
+
+        .repo-list {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .repo-tag {
+            background: var(--bg-primary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="theme-toggle" id="themeToggle">
+                <span id="themeIcon">🌙</span>
+                <span id="themeText">Dark Mode</span>
+            </button>
+            <h1>🔒 Dependabot Dashboard</h1>
+            <div class="subtitle">Podman Desktop Ecosystem - Dependency Tracking</div>
+        </header>
+
+        <div class="stats-grid" id="statsGrid"></div>
+
+        <div class="filters">
+            <div class="filter-group">
+                <label>Search:</label>
+                <input type="text" id="searchInput" placeholder="Search packages, repos, or vulnerabilities...">
+
+                <label>Organization:</label>
+                <select id="orgFilter">
+                    <option value="all">All Organizations</option>
+                </select>
+
+                <label>Severity:</label>
+                <select id="severityFilter">
+                    <option value="all">All Severities</option>
+                    <option value="critical">Critical</option>
+                    <option value="high">High</option>
+                    <option value="medium">Medium</option>
+                    <option value="low">Low</option>
+                </select>
+
+                <label>CI Status:</label>
+                <select id="ciFilter">
+                    <option value="all">All Statuses</option>
+                    <option value="failing">Failing</option>
+                    <option value="passing">Passing</option>
+                    <option value="pending">Pending</option>
+                </select>
+
+                <label>Alert Age:</label>
+                <select id="ageFilter">
+                    <option value="all">All Ages</option>
+                    <option value="0-7">0-7 days</option>
+                    <option value="8-30">8-30 days</option>
+                    <option value="31-90">31-90 days</option>
+                    <option value="90+">90+ days (Stale)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" data-tab="alerts">Dependabot Alerts</button>
+            <button class="tab" data-tab="prs">Open PRs</button>
+            <button class="tab" data-tab="coverage">Coverage Gaps</button>
+            <button class="tab" data-tab="shared">Shared Dependencies</button>
+        </div>
+
+        <div id="alerts" class="tab-content active">
+            <table id="alertsTable">
+                <thead>
+                    <tr>
+                        <th data-sort="repo">Repository</th>
+                        <th data-sort="package">Package</th>
+                        <th data-sort="severity">Severity</th>
+                        <th data-sort="age">Age</th>
+                        <th data-sort="vulnerable">Vulnerable Version</th>
+                        <th data-sort="patched">Patched Version</th>
+                        <th data-sort="created">Created</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody id="alertsBody"></tbody>
+            </table>
+        </div>
+
+        <div id="prs" class="tab-content">
+            <table id="prsTable">
+                <thead>
+                    <tr>
+                        <th data-sort="repo">Repository</th>
+                        <th data-sort="title">Title</th>
+                        <th data-sort="package">Package</th>
+                        <th data-sort="ci">CI Status</th>
+                        <th data-sort="created">Created</th>
+                        <th data-sort="updated">Updated</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody id="prsBody"></tbody>
+            </table>
+        </div>
+
+        <div id="coverage" class="tab-content">
+            <div class="coverage-summary">
+                <div class="summary-stat">
+                    <span class="summary-value" id="coverageSecurityCount">0</span>
+                    <span class="summary-label">Security Alerts</span>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-value" id="coverageOutdatedCount">0</span>
+                    <span class="summary-label">Outdated Packages</span>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-value" id="coverageTotalCount">0</span>
+                    <span class="summary-label">Total Packages</span>
+                </div>
+            </div>
+
+            <div class="coverage-filters">
+                <label>
+                    <input type="radio" name="coverageType" value="all" checked> All
+                </label>
+                <label>
+                    <input type="radio" name="coverageType" value="security"> 🚨 Security Only
+                </label>
+                <label>
+                    <input type="radio" name="coverageType" value="outdated"> 📦 Outdated Only
+                </label>
+            </div>
+
+            <table id="coverageTable" class="flat-coverage-table">
+                <thead>
+                    <tr>
+                        <th data-sort="type" class="col-type">Type</th>
+                        <th data-sort="severity" class="col-severity">Severity</th>
+                        <th data-sort="package" class="col-package">Package</th>
+                        <th data-sort="version" class="col-version">Version</th>
+                        <th data-sort="repo" class="col-repo">Repository</th>
+                    </tr>
+                </thead>
+                <tbody id="coverageBody"></tbody>
+            </table>
+        </div>
+
+        <div id="shared" class="tab-content">
+            <div class="shared-summary">
+                <div class="summary-stat">
+                    <span class="summary-value" id="sharedPackagesCount">0</span>
+                    <span class="summary-label">Shared Packages</span>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-value" id="sharedInconsistentCount">0</span>
+                    <span class="summary-label">Version Inconsistencies</span>
+                </div>
+                <div class="summary-stat">
+                    <span class="summary-value" id="sharedMostUsedCount">0</span>
+                    <span class="summary-label">Most Used Package</span>
+                </div>
+            </div>
+
+            <div class="shared-filters">
+                <label>
+                    <input type="radio" name="sharedFilter" value="all" checked> All Packages
+                </label>
+                <label>
+                    <input type="radio" name="sharedFilter" value="inconsistent"> ⚠️ Inconsistent Versions Only
+                </label>
+                <label>
+                    <input type="radio" name="sharedFilter" value="consistent"> ✅ Consistent Versions Only
+                </label>
+            </div>
+
+            <table id="sharedDepsTable" class="flat-shared-table">
+                <thead>
+                    <tr>
+                        <th data-sort="status" class="col-status">Status</th>
+                        <th data-sort="package" class="col-package">Package</th>
+                        <th data-sort="repos" class="col-repos">Repos</th>
+                        <th data-sort="versions" class="col-versions">Versions</th>
+                        <th class="col-version-list">Version Details</th>
+                        <th class="col-actions"></th>
+                    </tr>
+                </thead>
+                <tbody id="sharedDepsBody"></tbody>
+            </table>
+        </div>
+
+        <div class="last-updated" id="lastUpdated"></div>
+    </div>
+
+    <script>
+        // Theme Management
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+
+        // Load saved theme preference
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        if (savedTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+            themeIcon.textContent = '☀️';
+            themeText.textContent = 'Light Mode';
+        }
+
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const isDark = document.body.classList.contains('dark-mode');
+
+            if (isDark) {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light Mode';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+
+        let data = null;
+        let currentSort = { column: null, direction: 'asc' };
+
+        // Load data
+        fetch('data.json')
+            .then(response => response.json())
+            .then(loadedData => {
+                data = loadedData;
+                initializeDashboard();
+            })
+            .catch(error => {
+                console.error('Error loading data:', error);
+                document.body.innerHTML = '<div class="empty-state"><div class="empty-state-icon">⚠️</div><h2>Error Loading Data</h2><p>Please run <code>npm run fetch</code> to generate the data file.</p></div>';
+            });
+
+        function initializeDashboard() {
+            renderStats();
+            renderAlerts();
+            renderPRs();
+            renderCoverageGaps();
+            renderSharedDependencies();
+            setupFilters();
+            setupTabs();
+            setupSorting();
+            updateLastUpdated();
+        }
+
+        function renderStats() {
+            // Calculate stale alerts (90+ days old)
+            let staleAlerts = 0;
+            data.repositories.forEach(repo => {
+                repo.alerts.forEach(alert => {
+                    const ageDays = calculateAge(alert.createdAt);
+                    if (ageDays > 90) staleAlerts++;
+                });
+            });
+
+            const stats = [
+                { label: 'Repositories', value: data.globalStats.totalRepos },
+                { label: 'Dependabot Alerts', value: data.globalStats.totalAlerts },
+                { label: 'Open PRs', value: data.globalStats.totalDependabotPRs },
+                { label: 'Outdated Packages', value: data.globalStats.totalOutdatedPackages || 0 },
+                { label: 'Coverage Gaps', value: data.globalStats.totalCoverageGap,
+                  subtitle: `${data.globalStats.totalCoverageGapSecurityAlerts || 0} security, ${data.globalStats.totalCoverageGapOutdated || 0} outdated` },
+                { label: 'Failing PRs', value: data.globalStats.totalFailingPRs },
+                { label: 'Stale Alerts (90+ days)', value: staleAlerts },
+                { label: 'Shared Dependencies', value: data.globalStats.sharedDependencies }
+            ];
+
+            document.getElementById('statsGrid').innerHTML = stats.map(stat => `
+                <div class="stat-card">
+                    <div class="stat-value">${stat.value}</div>
+                    <div class="stat-label">${stat.label}</div>
+                    ${stat.subtitle ? `<div class="stat-subtitle" style="font-size: 0.7em; color: var(--text-muted); margin-top: 4px;">${stat.subtitle}</div>` : ''}
+                </div>
+            `).join('');
+
+            // Populate org filter
+            const orgs = [...new Set(data.repositories.map(r => r.owner))];
+            document.getElementById('orgFilter').innerHTML = '<option value="all">All Organizations</option>' +
+                orgs.map(org => `<option value="${org}">${org}</option>`).join('');
+        }
+
+        function renderAlerts() {
+            const alerts = [];
+            data.repositories.forEach(repo => {
+                repo.alerts.forEach(alert => {
+                    const ageDays = calculateAge(alert.createdAt);
+                    alerts.push({ ...alert, repoOwner: repo.owner, repoName: repo.repo, fullName: repo.fullName, ageDays });
+                });
+            });
+
+            const tbody = document.getElementById('alertsBody');
+            if (alerts.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="empty-state">No Dependabot alerts found</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = alerts.map(alert => {
+                const ageFormatted = formatAge(alert.ageDays);
+                return `
+                <tr data-owner="${alert.repoOwner}" data-severity="${alert.severity}" data-age="${alert.ageDays}">
+                    <td><a href="https://github.com/${alert.fullName}" class="repo-link" target="_blank">${alert.fullName}</a></td>
+                    <td><code>${alert.package}</code></td>
+                    <td><span class="badge severity-${alert.severity}">${alert.severity}</span></td>
+                    <td><span class="${ageFormatted.class}">${ageFormatted.text}</span></td>
+                    <td>${alert.vulnerableVersionRange}</td>
+                    <td>${alert.firstPatchedVersion}</td>
+                    <td>${formatDate(alert.createdAt)}</td>
+                    <td><a href="${alert.htmlUrl}" target="_blank">View</a></td>
+                </tr>
+                `;
+            }).join('');
+        }
+
+        function renderPRs() {
+            const prs = [];
+            data.repositories.forEach(repo => {
+                repo.dependabotPRs.forEach(pr => {
+                    prs.push({ ...pr, repoOwner: repo.owner, repoName: repo.repo, fullName: repo.fullName });
+                });
+            });
+
+            const tbody = document.getElementById('prsBody');
+            if (prs.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="empty-state">No open Dependabot PRs found</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = prs.map(pr => `
+                <tr data-owner="${pr.repoOwner}" data-ci="${pr.ciStatus}">
+                    <td><a href="https://github.com/${pr.fullName}" class="repo-link" target="_blank">${pr.fullName}</a></td>
+                    <td>${pr.title}</td>
+                    <td><code>${pr.package}</code></td>
+                    <td><span class="badge ci-${pr.ciStatus}">${pr.ciStatus}</span></td>
+                    <td>${formatDate(pr.createdAt)}</td>
+                    <td>${formatDate(pr.updatedAt)}</td>
+                    <td><a href="${pr.htmlUrl}" target="_blank">View PR</a></td>
+                </tr>
+            `).join('');
+        }
+
+        function renderCoverageGaps() {
+            // Flatten all packages across all repositories
+            const allPackages = [];
+            let totalSecurity = 0;
+            let totalOutdated = 0;
+
+            data.repositories.forEach(repo => {
+                if (!repo.coverageGapDetailed || repo.coverageGapDetailed.length === 0) return;
+
+                repo.coverageGapDetailed.forEach(pkg => {
+                    if (pkg.type === 'security-alert') totalSecurity++;
+                    if (pkg.type === 'outdated') totalOutdated++;
+
+                    allPackages.push({
+                        type: pkg.type,
+                        package: pkg.package,
+                        severity: pkg.severity || 'none',
+                        currentVersion: pkg.currentVersion || '—',
+                        latestVersion: pkg.latestVersion || '—',
+                        repo: repo.fullName,
+                        repoOwner: repo.owner
+                    });
+                });
+            });
+
+            // Update summary stats
+            document.getElementById('coverageSecurityCount').textContent = totalSecurity;
+            document.getElementById('coverageOutdatedCount').textContent = totalOutdated;
+            document.getElementById('coverageTotalCount').textContent = allPackages.length;
+
+            const tbody = document.getElementById('coverageBody');
+            if (allPackages.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="empty-state">✅ No coverage gaps - all alerts and outdated packages have PRs!</td></tr>';
+                return;
+            }
+
+            // Sort packages: security first (by severity), then outdated (alphabetically)
+            const severityOrder = { 'critical': 0, 'high': 1, 'medium': 2, 'low': 3, 'none': 4 };
+            allPackages.sort((a, b) => {
+                // Security alerts always come first
+                if (a.type === 'security-alert' && b.type !== 'security-alert') return -1;
+                if (a.type !== 'security-alert' && b.type === 'security-alert') return 1;
+
+                // Within security alerts, sort by severity
+                if (a.type === 'security-alert' && b.type === 'security-alert') {
+                    const severityDiff = (severityOrder[a.severity] || 4) - (severityOrder[b.severity] || 4);
+                    if (severityDiff !== 0) return severityDiff;
+                }
+
+                // Then by package name
+                return a.package.localeCompare(b.package);
+            });
+
+            // Store for filtering
+            window.allCoveragePackages = allPackages;
+
+            // Render all packages
+            renderCoveragePackages(allPackages);
+
+            // Setup filter listeners
+            document.querySelectorAll('input[name="coverageType"]').forEach(radio => {
+                radio.addEventListener('change', (e) => {
+                    const filterValue = e.target.value;
+                    let filtered = window.allCoveragePackages;
+
+                    if (filterValue === 'security') {
+                        filtered = filtered.filter(pkg => pkg.type === 'security-alert');
+                    } else if (filterValue === 'outdated') {
+                        filtered = filtered.filter(pkg => pkg.type === 'outdated');
+                    }
+
+                    renderCoveragePackages(filtered);
+                });
+            });
+        }
+
+        function renderCoveragePackages(packages) {
+            const tbody = document.getElementById('coverageBody');
+
+            if (packages.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="empty-state">No packages match the selected filter</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = packages.map(pkg => {
+                const isSecurity = pkg.type === 'security-alert';
+                const rowClass = isSecurity ? 'security-row' : 'outdated-row';
+
+                return `
+                    <tr class="${rowClass}" data-owner="${pkg.repoOwner}" data-type="${pkg.type}">
+                        <td>
+                            <span class="type-badge ${isSecurity ? 'security-type' : 'outdated-type'}">
+                                ${isSecurity ? '🚨 Security' : '📦 Outdated'}
+                            </span>
+                        </td>
+                        <td class="text-center">
+                            ${isSecurity && pkg.severity !== 'none'
+                                ? `<span class="badge severity-${pkg.severity}">${pkg.severity}</span>`
+                                : '<span class="text-muted">—</span>'}
+                        </td>
+                        <td><code class="package-name">${pkg.package}</code></td>
+                        <td class="version-cell">
+                            ${!isSecurity && pkg.currentVersion !== '—'
+                                ? `<span class="version-current">${pkg.currentVersion}</span> <span class="version-arrow">→</span> <span class="version-latest">${pkg.latestVersion}</span>`
+                                : '<span class="text-muted">—</span>'}
+                        </td>
+                        <td><a href="https://github.com/${pkg.repo}" class="repo-link" target="_blank">${pkg.repo}</a></td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function renderSharedDependencies() {
+            const sharedDeps = data.sharedDependencies || [];
+
+            if (sharedDeps.length === 0) {
+                document.getElementById('sharedDepsBody').innerHTML = '<tr><td colspan="6" class="empty-state">No shared dependencies found</td></tr>';
+                return;
+            }
+
+            // Enhance data with consistency info
+            const enhancedDeps = sharedDeps.map(dep => {
+                // Normalize versions for comparison (remove ^, ~, etc.)
+                const normalizedVersions = dep.versions.map(v => v.replace(/^[\^~>=<]+/, ''));
+                const uniqueVersions = [...new Set(normalizedVersions)];
+                const isConsistent = uniqueVersions.length === 1;
+
+                return {
+                    ...dep,
+                    versionCount: dep.versions.length,
+                    uniqueVersionCount: uniqueVersions.length,
+                    isConsistent,
+                    normalizedVersions: uniqueVersions
+                };
+            });
+
+            // Calculate summary stats
+            const inconsistentCount = enhancedDeps.filter(d => !d.isConsistent).length;
+            const mostUsed = enhancedDeps.reduce((max, dep) => dep.repoCount > max ? dep.repoCount : max, 0);
+
+            document.getElementById('sharedPackagesCount').textContent = sharedDeps.length;
+            document.getElementById('sharedInconsistentCount').textContent = inconsistentCount;
+            document.getElementById('sharedMostUsedCount').textContent = mostUsed;
+
+            // Sort: inconsistent first, then by repo count
+            enhancedDeps.sort((a, b) => {
+                if (a.isConsistent !== b.isConsistent) {
+                    return a.isConsistent ? 1 : -1; // Inconsistent first
+                }
+                return b.repoCount - a.repoCount; // Then by repo count
+            });
+
+            // Store for filtering
+            window.allSharedDeps = enhancedDeps;
+
+            // Render
+            renderSharedDepsTable(enhancedDeps);
+
+            // Setup filter listeners
+            document.querySelectorAll('input[name="sharedFilter"]').forEach(radio => {
+                radio.addEventListener('change', (e) => {
+                    const filterValue = e.target.value;
+                    let filtered = window.allSharedDeps;
+
+                    if (filterValue === 'inconsistent') {
+                        filtered = filtered.filter(dep => !dep.isConsistent);
+                    } else if (filterValue === 'consistent') {
+                        filtered = filtered.filter(dep => dep.isConsistent);
+                    }
+
+                    renderSharedDepsTable(filtered);
+                });
+            });
+        }
+
+        function renderSharedDepsTable(deps) {
+            const tbody = document.getElementById('sharedDepsBody');
+
+            if (deps.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" class="empty-state">No packages match the selected filter</td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = deps.map((dep, index) => {
+                const rowId = `shared-row-${index}`;
+                const detailId = `shared-detail-${index}`;
+                const isConsistent = dep.isConsistent;
+
+                return `
+                    <tr class="${isConsistent ? 'consistent-row' : 'inconsistent-row'}" data-package="${dep.package}">
+                        <td class="text-center">
+                            ${isConsistent
+                                ? '<span class="status-badge consistent-badge">✅ Consistent</span>'
+                                : '<span class="status-badge inconsistent-badge">⚠️ Inconsistent</span>'}
+                        </td>
+                        <td><code class="package-name">${dep.package}</code></td>
+                        <td class="text-center"><strong>${dep.repoCount}</strong> repos</td>
+                        <td class="text-center">
+                            <span class="version-count-badge ${isConsistent ? 'consistent' : 'inconsistent'}">
+                                ${dep.uniqueVersionCount} version${dep.uniqueVersionCount > 1 ? 's' : ''}
+                            </span>
+                        </td>
+                        <td class="version-list-cell">
+                            ${dep.normalizedVersions.map(v =>
+                                `<span class="version-tag">${v}</span>`
+                            ).join('')}
+                            ${dep.versions.length > dep.normalizedVersions.length
+                                ? `<span class="text-muted" style="font-size: 0.85em;">(${dep.versions.length} total incl. prefixes)</span>`
+                                : ''}
+                        </td>
+                        <td class="text-center">
+                            <button class="expand-btn" onclick="toggleSharedDetail('${detailId}')" aria-label="Show repositories">
+                                <span class="expand-icon">▼</span> Repos
+                            </button>
+                        </td>
+                    </tr>
+                    <tr id="${detailId}" class="detail-row" style="display: none;">
+                        <td colspan="6">
+                            <div class="detail-content">
+                                <h4>Repositories using ${dep.package}:</h4>
+                                <div class="repo-chips">
+                                    ${dep.repos.map(repo =>
+                                        `<a href="https://github.com/${repo}" target="_blank" class="repo-chip">${repo}</a>`
+                                    ).join('')}
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Toggle function for expanding repository details
+        window.toggleSharedDetail = function(detailId) {
+            const detailRow = document.getElementById(detailId);
+            const btn = event.target.closest('button');
+            const icon = btn.querySelector('.expand-icon');
+
+            if (detailRow.style.display === 'none') {
+                detailRow.style.display = 'table-row';
+                icon.textContent = '▲';
+            } else {
+                detailRow.style.display = 'none';
+                icon.textContent = '▼';
+            }
+        }
+
+        function setupFilters() {
+            const searchInput = document.getElementById('searchInput');
+            const orgFilter = document.getElementById('orgFilter');
+            const severityFilter = document.getElementById('severityFilter');
+            const ciFilter = document.getElementById('ciFilter');
+            const ageFilter = document.getElementById('ageFilter');
+
+            [searchInput, orgFilter, severityFilter, ciFilter, ageFilter].forEach(element => {
+                element.addEventListener('input', applyFilters);
+            });
+        }
+
+        function applyFilters() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const orgFilter = document.getElementById('orgFilter').value;
+            const severityFilter = document.getElementById('severityFilter').value;
+            const ciFilter = document.getElementById('ciFilter').value;
+            const ageFilter = document.getElementById('ageFilter').value;
+
+            // Filter alerts table
+            document.querySelectorAll('#alertsBody tr').forEach(row => {
+                const text = row.textContent.toLowerCase();
+                const owner = row.dataset.owner;
+                const severity = row.dataset.severity;
+                const age = parseInt(row.dataset.age || '0');
+
+                const matchSearch = searchTerm === '' || text.includes(searchTerm);
+                const matchOrg = orgFilter === 'all' || owner === orgFilter;
+                const matchSeverity = severityFilter === 'all' || severity === severityFilter;
+
+                let matchAge = true;
+                if (ageFilter === '0-7') matchAge = age <= 7;
+                else if (ageFilter === '8-30') matchAge = age >= 8 && age <= 30;
+                else if (ageFilter === '31-90') matchAge = age >= 31 && age <= 90;
+                else if (ageFilter === '90+') matchAge = age > 90;
+
+                row.style.display = matchSearch && matchOrg && matchSeverity && matchAge ? '' : 'none';
+            });
+
+            // Filter PRs table
+            document.querySelectorAll('#prsBody tr').forEach(row => {
+                const text = row.textContent.toLowerCase();
+                const owner = row.dataset.owner;
+                const ci = row.dataset.ci;
+
+                const matchSearch = searchTerm === '' || text.includes(searchTerm);
+                const matchOrg = orgFilter === 'all' || owner === orgFilter;
+                const matchCI = ciFilter === 'all' || ci === ciFilter;
+
+                row.style.display = matchSearch && matchOrg && matchCI ? '' : 'none';
+            });
+
+            // Filter coverage gaps table
+            document.querySelectorAll('#coverageBody tr').forEach(row => {
+                const text = row.textContent.toLowerCase();
+                const owner = row.dataset.owner;
+
+                const matchSearch = searchTerm === '' || text.includes(searchTerm);
+                const matchOrg = orgFilter === 'all' || owner === orgFilter;
+
+                row.style.display = matchSearch && matchOrg ? '' : 'none';
+            });
+        }
+
+        function setupTabs() {
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+
+                    tab.classList.add('active');
+                    document.getElementById(tab.dataset.tab).classList.add('active');
+                });
+            });
+        }
+
+        function setupSorting() {
+            document.querySelectorAll('th[data-sort]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const column = th.dataset.sort;
+                    const table = th.closest('table');
+                    sortTable(table, column);
+                });
+            });
+        }
+
+        function sortTable(table, column) {
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = 'asc';
+            }
+
+            rows.sort((a, b) => {
+                const aValue = a.cells[getColumnIndex(table, column)].textContent;
+                const bValue = b.cells[getColumnIndex(table, column)].textContent;
+
+                if (currentSort.direction === 'asc') {
+                    return aValue.localeCompare(bValue);
+                } else {
+                    return bValue.localeCompare(aValue);
+                }
+            });
+
+            rows.forEach(row => tbody.appendChild(row));
+        }
+
+        function getColumnIndex(table, columnName) {
+            const headers = Array.from(table.querySelectorAll('th'));
+            return headers.findIndex(th => th.dataset.sort === columnName);
+        }
+
+        function calculateAge(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const diffMs = now - date;
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+            return diffDays;
+        }
+
+        function formatAge(days) {
+            if (days === 0) return { text: 'Today', class: 'age-fresh' };
+            if (days === 1) return { text: '1 day', class: 'age-fresh' };
+            if (days < 7) return { text: `${days} days`, class: 'age-fresh' };
+            if (days < 30) {
+                const weeks = Math.floor(days / 7);
+                return { text: `${weeks} ${weeks === 1 ? 'week' : 'weeks'}`, class: 'age-moderate' };
+            }
+            if (days < 90) {
+                const months = Math.floor(days / 30);
+                return { text: `${months} ${months === 1 ? 'month' : 'months'}`, class: 'age-old' };
+            }
+            const months = Math.floor(days / 30);
+            return { text: `${months} months`, class: 'age-stale' };
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const now = new Date();
+            const diffMs = now - date;
+            const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+            if (diffDays === 0) return 'Today';
+            if (diffDays === 1) return 'Yesterday';
+            if (diffDays < 7) return `${diffDays} days ago`;
+            if (diffDays < 30) return `${Math.floor(diffDays / 7)} weeks ago`;
+            return date.toLocaleDateString();
+        }
+
+        function updateLastUpdated() {
+            const lastUpdated = new Date(data.generatedAt);
+            document.getElementById('lastUpdated').textContent =
+                `Last updated: ${lastUpdated.toLocaleString()}`;
+        }
+    </script>
+</body>
+</html>
